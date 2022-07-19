@@ -1,1310 +1,1485 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Courses by LearTutor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HKPGLEHGM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Courses by LearTutor</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
-  gtag('config', 'G-3HKPGLEHGM');
-</script>
-    
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" ><strong >Courses by LearTutor</strong></a>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HKPGLEHGM"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-3HKPGLEHGM');
+      </script>
+
+
+
+    </head>
+    <body>
+
+        <!--Navbar-->
         
-        
-          <ul class="d-flex me-auto list-unstyled gap-2">
-            <li class="nav-item">
-              <a class="nav-link active"  href="#section1"><a class="btn btn-primary " href="#section1">كورسات من باقي المواقع</a></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#section2"><a class="btn btn-primary " href="#section2"><i class="bi bi-youtube"></i>  كورسات من  </a></a>
-            </li>
+        <nav class="navbar navbar-expand-lg bg-dark" dir="rtl">
+            <div class="container">
+              <a class="navbar-brand text-warning" href="index.html"> Courses by LearTutor </a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#section1">الأقسام </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#Categories"> الفلاتر</a>
+                  </li>
+                  
+                </ul>
+
+                <button type="button" class="btn" position-relative>
+                        <a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram" style="font-size: 1.5rem;"></i></a>
+                </button>
+                <button type="button" class="btn" position-relative>
+                        <a href="https://twitter.com/LearTutor_AR" target="_blank" ><i class="bi bi-twitter "style="font-size: 1.5rem;" ></i></a>
+                </button>
           
-            <ul class="d-flex  list-unstyled gap-2 position-absolute top-10 end-0 ">
+              </div>
+            </div>
+          </nav>  
+        <!--End of Navbar-->
+      <div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="8000">
+                <img  src="1.WebP" class="d-block w-100" >
+                <div class="carousel-caption d-md-block">
+                  <h5> </h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="6000">
+                <img src="2.WebP" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="3.WebP" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5></h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+
+      <div class="container" >
+        <h2 class="text-center text-dark pt-4" id="section1"> الأقسام  </h2>
+        <div class="row row-cols-2 row-cols-md-6 g-6" id="cardg" >
+         <div class="col">
+            <div class="card h-100">
+              <img class="img-fluid"  src="Youtube.WebP" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title"> كورسات من اليوتيوب  </h2>
+                <a class="btn btn-outline-success" href="Youtube.html" target="_blank"> عرض  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img class="img-fluid"  src="otherwebsites.WebP" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h2 class="card-title"> كورسات من باقي مواقع الكورسات   </h2>
+                <a class="btn btn-outline-success" href="otherwebsite.html" target="_blank"> عرض  </a>
+              </div>
+            </div>
+          </div>
+       </div>
+
+       <section id="Categories">
+        <div class="container">
+          <div class="text-center pt-4 filters">الفلاتر</div>
+        </div>
+
+        <ul class="tabs">
+          <li class="active" data-cont=".langle">تعلم اللغات </li>
+          <li data-cont=".Programming">برمجة </li>
+          <li data-cont=".medicine">محتوى طبي </li>
+          <li data-cont=".progapps">برامج وتطبيقات</li>
+          <li data-cont=".marketing">تسويق إلكتروني</li>
+          <li data-cont=".studymat">مواد دراسية </li>
+          <li data-cont=".mahara">تطوير الذات </li>
+          <li data-cont=".graphic">Graphic design </li>
+          <li data-cont=".dini">ديني </li>
+          <li data-cont=".other">أخرى </li>
+        </ul>
+        <div class="content ">
+          <div class="langle  row col ">
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/ARE_ofLsVHw/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعلم | اللغة الإيطالية   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3PrqIzj" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/ARE_ofLsVHw/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعلم | اللغة الفرنسية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">قناة مدرستنا   </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3LRj1zM" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/jjSpOtwZdLY/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعلم اللغة الألمانية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3utXHd0" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/MXKY0R5kqWs/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعلم اللغة الإسبانية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3JDAbk6" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/26qCP6YLfiA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">قواعد اللغة الانجليزية و شرح الازمنة </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> ZAmericanEnglish</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3izpAKN" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+
+          <div class="Programming row col "> 
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/6QAELgirvjs/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn HTML In Arabic </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3uekDga" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/X1ulCwyhCVM/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn CSS In Arabic</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/37NWG7Q" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/ACOiGZoqC8w/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn Git & GitHub</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Elzero Web School  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3QJNUcX" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/PWuTLTFMtYw/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">كورس جافا سكريبت كامل بالعربي</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Abdelrahman Gamal </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3qADEsc" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/BjfCWSFmIFI/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Web Application Penetration Testing Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Ebrahem Hegazy </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/36hb1cr" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/cARGOrtiWt4/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Build a portfolio website using HTML & CSS - بناء موقع كامل</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Islam Hesham (Codezilla)</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3tLgWPR" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/VPvVD8t02U8/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Flutter Course for Beginners 37-hour Cross Platform App Development Tutorial</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/38gbVqn" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/8jLOx1hD3_o/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">C++ Programming Course - Beginner to Advanced</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3qT3NCt" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/VLflTjd3lWA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Number Systems</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> The Organic Chemistry Tutor</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3uEBOaV" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/xSUm6iMtREA/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Build a Social Media App with Django Python Web Framework Tutorial</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Freecodecamp  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3NlPzmB" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/bMknfKXIFA8/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">React Course - Beginner's Tutorial for React JavaScript Library [2022]</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Scrimba </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wfl2Bc" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/xcg9qq6SZ0w/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PHP Bootcamp 2022</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3mgQ31z" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/ylJz7N-dv1E/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Code an Amazon Clone Using Flutter and JavaScript Full Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Rivaan Ranawat </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Oasvaz" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/8vfQ6SWBZ-U/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">React Testing Course for Beginners  Code and Test 3 Apps</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">FreeCodeCamp  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Q7nr8O" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/0n809nd4Zu4/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Build a Chrome Extension  Course for Beginners</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3mHqRBz" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/cT_ZYrS3tKc/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Build a Shopping Cart with JavaScript  Project Tutorial</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">FreeCodeCamp  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3MDUPBk" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/PXMJ6FS7llk/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Automate with Python  Full Course for Beginners</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xTwDWb" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/GM6dQBmc-Xg/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn JavaScript in Arabic</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Elzero Web School</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xZou3E" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/HvxmF0FUwrM/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SQL Server Performance Essentials  Full Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3mxftIJ" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/t0syDUSbdfE/sddefault.jpg?v=62743c57" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PHP Tutorial for Beginners  Full Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">Envato Tuts+ </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3NiJqXT" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/O0XHaN1-5eo/sddefault.jpg?v=6245f1fe" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn PHP for WordPress</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3HMCEsg" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/B-ytMSuwbf8/sddefault.jpg?v=624f4ccf" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Web Design for Beginners</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">Envato Tuts+ </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xULHTc" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/y-UA8SIhWG4/sddefault.jpg?v=5f8d8007" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Designing for WordPress (Using a Design System)</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3QGY7qy" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/376vZ1wNYPA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Complete Laravel Tutorial | Laravel From Scratch </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Code With Dary </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3OFs7kY" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/iG2jotQo9NI/sddefault.jpg?v=62bd879b" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HTML & CSS for Beginners | FREE COURSE </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3o07Efc" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/ja3l6-ikzR4/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> تصميم وبرمجة موقع يوديمي مع الرفع إلى الاستضافة  </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Nour Homsi </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3ci1TXM" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/scholarships/Intel+Edge+AI+Scholarship+Program_mobile.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Intel® Edge AI Fundamentals with OpenVINO™</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Intel (Michael Virgo)</span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3zfCveD" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud899_thumbnail.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Offline Web Applications</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Michael Wales </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3td4rfv" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud501_thumbnail.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Machine Learning for Trading</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Tucker Balch,Arpan Chakraborty </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3tcjeai" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud187_thumbnail.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Intro to TensorFlow for Deep Learning</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Magnus Hyttsten , Juan Delgado </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xkF5NP" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/course-catalog/en-us/catalog-image-ud080.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AWS Machine Learning Foundations Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Andrew Paster,Maryam Rezapoor </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xdsOKU" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/79/192c002fe111e88780515c581bd11f/Screen-Shot-2018-03-24-at-4.42.07-PM.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">بايثون لعلوم البيانات والذكاء الصناعي</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Joseph Santarcangelo </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3mBzq0N" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/c8/a4c3707a30450b9453fee527805387/Projekt-3-vizual.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Automate Doc Review Process with SharePoint & Power Automate</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Coursera project Network </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3QuXMHu" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/5e/b4ef8069b511e3ae92c39913bb30e0/Rprogramming.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R البرمجة باستخدام لغة</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Jeff Leek , Roger D. Peng </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3OmON9q" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud188_thumbnail.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Intro to Deep Learning with PyTorch</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Mat Leonard , Alexis Cook  </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3zvoytk" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/17/cf827f1db145e0bbd5b4e1ae918a1d/Cyber-Security.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cyber Security Fundamentals  </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of London  </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3yI2BFg" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud953_thumbnail.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Linear Algebra Refresher Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Chris Pryby</span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3x8JpPY" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/cs291_thumbnail.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Interactive 3D Graphics</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Autodesk </span></p>
+                  <span class="badge text-bg-danger">Udacity</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3GKCKzX" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="medicine  row col "> 
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cell module</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3w14z27" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Epithelium module</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3KGCOB4" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CNS module</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3s8bo0P" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cardiopulmonary module 2022</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/37UHPcg" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Git module</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3vXgZIp" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/M5VM62MvKxM/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pathophysiology</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Armando Hasudungan </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Dv9MCt" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/fq1yqdi4N7Q/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">OTC Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> DR Ahmed Badawy </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3afcEsG" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/k_WHxGJTZi0/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">سلسله (OTC) لتشخيص الامراض وعلاجها و للتدريب الصيدلي</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> AHMED pharmacy </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3lLZsy4" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/2BSU2PZw6bg/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">OTC كورس</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">الدكتور ابراهيم محمود</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3GqjJTp" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Musculoskeletal module</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/39HKaHG" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/f2/6d2dc380614917b3894150b24e5d7d/0780B90B-02EA-42C1-A1F4-900B1F66DB44.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Biomedical Visualisation</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of Glasgow </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3um3r8x" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/courses/Maternity_cover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">مراحل الحمل - صحة الحامل والطفل</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  د.نيرة ثابت , د.هدى التومي </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3uz7Nck" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D9%81%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9_%D8%A3%D9%81%D9%82%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الاسعافات الأولية </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> د. أحمد رمزي ,د. عفاف حجازي</span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3DgR2Xf" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/topics/medicalneuro/large-icon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Medical Neuroscience</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Duke University </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3JX1aY3" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/29/77d8a09b4c11e8b7a12503c978f9c1/penicillin.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Antibiotic Stewardship</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Stanford University </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3LfMSBr" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/26/7f17f08a1111e79a8463be7d3581b4/Oral-Cavity-Course-5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Oral Cavity: Portal to Health and Disease</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of Pennsylvania </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3b9Ytpa" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="progapps row col ">
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/yD66BBLtcM8/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعليم الفوتوشوب فى ساعتين ونصف</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> عمرو عطاالله </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3imAVOv" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/YQT8zzmnqis/hqdefault.jpg?v=6049793e" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الاكسيل من الصفر حتى الاحتراف في ساعة ونصف فقط</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Sherif Fathy Mohamed </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3qsIk37" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/9Hf-OQ-MZ4A/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">يلا نتعلم مونتاج الفيديو من الصفر Adobe Premiere Pro 2021</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Mostafa Makram </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/36EX5c3" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/hEAg47jdYMs/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Revit Tutorial for Beginners - Building Information Modeling [3D Design Course]</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Freecodecamp </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3whqlzT" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/VtLXKU1PpRU/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AutoCAD for Beginners - Full University Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3JMb7aE" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/N2opj8XzYBY/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Google Sheets - Full Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> datalabcc</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3yFsaZe" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/LEqgRPA0U3Y/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Adobe Premiere Pro CC Course - كورس بريمير كامل</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> عمرو عطاالله </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3yTmvPd" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/w-vl8fFi4Qo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD-BDxv6V82kYztK_5opc6lMP9tew" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> تعلم المونتاج ببرنامج دافينشي ريزولف Davinci Resolve 16 </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> mostafa makram TV  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3IIorgr" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/revit.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">برنامج التصميم الهندسي Revit</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  محمد حمد </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3iEqtlA" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D9%85%D8%B3%D8%A7%D9%82_%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%88%D9%8A%D9%86%D9%88_%D8%A3%D9%81%D9%82%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">أساسيات برمجة الاردوينو ومشاريعه العملية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  م. محمود نادر </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3qJqp8m" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlpr.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MATLAB Programming Techniques </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Matt Tearle </span></p>
+                  <span class="badge text-bg-danger">Mathworks Academy</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3uQmzfH" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlvi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MATLAB for Data Processing and Visualization   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Renee Bach </span></p>
+                  <span class="badge text-bg-danger">Mathworks Academy</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3AOqJZu" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlbe.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MATLAB Fundamentals  </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Erin Byrne </span></p>
+                  <span class="badge text-bg-danger">Mathworks Academy </span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3ASr39q" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_gettingstarted.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MATLAB Onramp   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Renee Bach </span></p>
+                  <span class="badge text-bg-danger"> Mathworks Academy </span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3AOcnYX" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="marketing  row col ">
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/xsVTqzratPs/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Complete SEO Course for Beginners: Learn to Rank #1 in Google   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Ahrefs </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Pwi2qY" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://www.semrush.com/academy/img/land_photo/bastian/bastian_big@2x.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Technical SEO course with Bastian Grimm  </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Bastian Grimm </span></p>
+                  <span class="badge text-bg-danger">Semrush Academy  </span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3z5blXp" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82_%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A_%D8%A3%D9%81%D9%82%D9%8A.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">التسويق الإلكتروني - إدارة الحملات الرقمية المدفوعة</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  ابراهيم البواليز </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3iFE2Ba" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/Digital-Marketing3x-8_1_1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">التسويق الرقمي: الـ SEO، التحليل الرقمي، والتواجد الصحيح</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  جودت شمّاس </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wZUpRF" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/CV-Writing-Course.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">السيرة الذاتية - CV Writing</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  امارا زَبَير , أحمد الترعاني </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Ni3wCG" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA_%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">إدارة المنتجات الإلكترونية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> محمد موسى , إبراهيم أبوحجلة </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3JNPoyY" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/dms-01.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become a Digital Marketing Specialist</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wnnjum" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            
+
+
+          </div>
+
+          <div class="studymat row col " >
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/MHeirBPOI6w/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Algebra </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> The Organic Chemistry Tutor </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3ioTnWQ" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/BHzesnPF3kE/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الإقتصاد الهندسي </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Ahmed Aboul Fotouh </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3nfgeX8" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/Y3h2GNajvcY/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">biology</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">The Organic Chemistry Tutor </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3sMHa3s" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/5zi5eG5Ui-Y/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Trigonometry full course for Beginners</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Academic Lesson</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3u0XPRz" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/hyctIDPRSqY/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Quantum Physics Full Course | Quantum Mechanics Course</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Academic Lesson </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3OkZ0DG" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%B1%D9%88%D8%A8%D9%88%D8%AA%D8%A7%D8%AA_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">صناعة الروبوتات</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> محمود نادر </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3JNideI" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="mahara row col " >
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/7nmKtI7fEmU/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ملخص كورس تعلم كيف تتعلم</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Ahmed Abouzaid </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/39Lporn" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/7JysIkTyccs/hqdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">اجعل حسابك جذاب على لينكدإن LinkedIn</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> غريب الشيخ  </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Nt5sHK" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/52/6dff15e6f247789eb5dafb9be90cb2/Learning-How-to-Learn-Logo_875X875px.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">تعّلم كيف تتعلم: أدوات ذهنية قوية لمساعدتك على إتقان موضوعات صعبة</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Linda Walker, barbara oakley </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3ixLvlB" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D9%81%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9_%D8%A3%D9%81%D9%82%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الاسعافات الأولية </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> د. أحمد رمزي ,د. عفاف حجازي</span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3DgR2Xf" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/CV-Writing-Course.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">السيرة الذاتية - CV Writing</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  امارا زَبَير , أحمد الترعاني </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3Ni3wCG" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/99/7ab7c00f7b11e79b617dbb2116532d/contractnegotiations_Logo_080814d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Successful Negotiation: Essential Strategies and Skills</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of Michigan </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3J15809" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://www.mahrati.com/assets/images/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%88%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">صيانة وإصلاح الأجهزة الكهربية المنزلية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  خالد عثمان </span></p>
+                  <span class="badge text-bg-danger">مهاراتي</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3kxfICA" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/Business-Plan-Course4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">خطة العمل ودراسة الجدوى المالية</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> عودة حبش </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3P5LfcN" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://prod-discovery.edx-cdn.org/media/course/image/f42bce09-2533-48fb-a9c4-8053aedf941b-798c36769d88.small.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn Like a Pro: Science-Based Tools to Become Better at Anything   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  Barbara Oakley,Olav Schewe </span></p>
+                  <span class="badge text-bg-danger">Edx </span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3P6IeZt" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="graphic row col ">
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/QrNi9FmdlxY/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Typography & Design</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> the Futur </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wnf6WM" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/I9CGvbstiBw/sddefault.jpg?v=5f8071dd" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Basics of Print Design</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3nf1UOw" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/LxO-6rlihSg/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Learn Photography [Full Course] by  Photographer Chris Bray</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Chris Bray</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3xJDSzS" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid" src="https://i.ytimg.com/vi/pz-lwONtVmM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB9aD0fD1HGnZp8gwr4edRrna0Pmw" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design Tutorials   </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> ACADGILD</span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3uMpeHm" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D9%85%D9%82%D8%AF%D9%85%D8%A9_%D9%81%D9%8A_%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85_%D8%A7%D9%84%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83%D9%8A_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">مقدمة في التصميم الجرافيكي</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> بهية شهاب،مدحت عيد،عامر دعبوب </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wEVoov" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D9%86%D9%81%D9%88%D8%AC%D8%B1%D8%A7%D9%81%D9%83%D8%B3_%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%B1%D9%83_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">الإنفوجرافيك المتحرك (الموشن إنفوجرافيكس)</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> د. محمد شلتوت</span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3LsGs1T" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/3d/934c303d6a11e6be95c9364677a51a/ds_mooc_logo_text-_1_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Powerful Tools for Teaching and Learning: Digital Storytelling  </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of Houston   </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3O8HJg8" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://ccweb.imgix.net/https%3A%2F%2Fd3f1iyfxxz8i1e.cloudfront.net%2Fcourses%2Fcourse_image%2F474ae08c7e34.png?ar=16%3A9&auto=format&cs=strip&fit=crop&h=380&ixlib=php-3.3.1&w=535&s=c218e104f6c5fba4c83d564fefb0e077" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Design: Creation of Artifacts in Society </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  University of Pennsylvania   </span></p>
+                  <span class="badge text-bg-danger">Coursera</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3chjTBF" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            
+            
+
+
+
+
+          </div>
+
+          <div class="dini  row col ">
+            
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://i.ytimg.com/vi/cfGS1hqsdBg/sddefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> تفسير سورة البقرة -الشيخ الشعراوي </h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> الشيخ محمد متولي الشعراوي </span></p>
+                  <span class="badge text-bg-danger">Youtube</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3NidrZ5" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="other  row col ">
+
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/Water_treatment_course.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">مقدمة في معالجة مياه الشرب</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success">  أروى عبد الحي ،لوك ريتفيلد </span></p>
+                  <span class="badge text-bg-danger">إدراك</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3yPUF6p" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/p03-03-dsk-e21-v4.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become a Data Analyst</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/37LEFXD" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/dms-01.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become a Digital Marketing Specialist</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3wnnjum" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.05-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become an IT Support Specialist: Free Online Training Classes</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Mike Meyers </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3qiBltB" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.06-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become an IT Administrator: Free Online Training Classes</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> Mike Meyers </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning</span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3ioMfK4" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.10-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Become a Sales Representative</h5>
+                  <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
+                  <span class="badge text-bg-danger">LinkedIn Learning </span>
+                  <a class="btn btn-outline-success" href="https://bit.ly/3N3QCbz" target="_blank"> عرض الكورس </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      
+
+ 
           
-              <li>
-              <a href="https://twitter.com/LearTutor_AR" target="_blank" ><i class="bi bi-twitter "style="font-size: 1.5rem;" ></i></a>
-              </li>
-              <li><a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram" style="font-size: 1.5rem;"></i></a></li>
-              
-            </ul>    
         
-      </div>
-    </nav>
+       </section>
 
 
-    
-  <div class="container">
-    <h2 class="text-center text-dark pb-2" id="section1">👇كورسات مجانية من مواقع الكورسات المختلفة  👇</h2>
-  <div class="row row-cols-2 row-cols-md-6 g-4" >
-   
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/17/cf827f1db145e0bbd5b4e1ae918a1d/Cyber-Security.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cyber Security Fundamentals  </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of London  </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3yI2BFg" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/3d/934c303d6a11e6be95c9364677a51a/ds_mooc_logo_text-_1_.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Powerful Tools for Teaching and Learning: Digital Storytelling  </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of Houston   </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3O8HJg8" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://ccweb.imgix.net/https%3A%2F%2Fd3f1iyfxxz8i1e.cloudfront.net%2Fcourses%2Fcourse_image%2F474ae08c7e34.png?ar=16%3A9&auto=format&cs=strip&fit=crop&h=380&ixlib=php-3.3.1&w=535&s=c218e104f6c5fba4c83d564fefb0e077" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Design: Creation of Artifacts in Society </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of Pennsylvania   </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3chjTBF" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://www.semrush.com/academy/img/land_photo/bastian/bastian_big@2x.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Technical SEO course with Bastian Grimm  </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Bastian Grimm </span></p>
-          <span class="badge text-bg-danger">Semrush Academy  </span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3z5blXp" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlpr.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MATLAB Programming Techniques </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Matt Tearle </span></p>
-          <span class="badge text-bg-danger">Mathworks Academy</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uQmzfH" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlvi.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MATLAB for Data Processing and Visualization   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Renee Bach </span></p>
-          <span class="badge text-bg-danger">Mathworks Academy</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3AOqJZu" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_mlbe.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MATLAB Fundamentals  </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Erin Byrne </span></p>
-          <span class="badge text-bg-danger">Mathworks Academy </span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3ASr39q" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://matlabacademy.mathworks.com/images/course/panel_gettingstarted.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">MATLAB Onramp   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Renee Bach </span></p>
-          <span class="badge text-bg-danger"> Mathworks Academy </span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3AOcnYX" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://prod-discovery.edx-cdn.org/media/course/image/f42bce09-2533-48fb-a9c4-8053aedf941b-798c36769d88.small.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn Like a Pro: Science-Based Tools to Become Better at Anything   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Barbara Oakley,Olav Schewe </span></p>
-          <span class="badge text-bg-danger">Edx </span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3P6IeZt" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/26/7f17f08a1111e79a8463be7d3581b4/Oral-Cavity-Course-5.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">The Oral Cavity: Portal to Health and Disease</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of Pennsylvania </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3b9Ytpa" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/c8/a4c3707a30450b9453fee527805387/Projekt-3-vizual.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Automate Doc Review Process with SharePoint & Power Automate</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Coursera project Network </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3QuXMHu" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/5e/b4ef8069b511e3ae92c39913bb30e0/Rprogramming.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">R البرمجة باستخدام لغة</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Jeff Leek , Roger D. Peng </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3OmON9q" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud188_thumbnail.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Intro to Deep Learning with PyTorch</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Mat Leonard , Alexis Cook  </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3zvoytk" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud187_thumbnail.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Intro to TensorFlow for Deep Learning</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Magnus Hyttsten , Juan Delgado </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xkF5NP" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/course-catalog/en-us/catalog-image-ud080.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">AWS Machine Learning Foundations Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Andrew Paster,Maryam Rezapoor </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xdsOKU" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/79/192c002fe111e88780515c581bd11f/Screen-Shot-2018-03-24-at-4.42.07-PM.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">بايثون لعلوم البيانات والذكاء الصناعي</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Joseph Santarcangelo </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3mBzq0N" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/scholarships/Intel+Edge+AI+Scholarship+Program_mobile.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Intel® Edge AI Fundamentals with OpenVINO™</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Intel (Michael Virgo)</span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3zfCveD" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud899_thumbnail.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Offline Web Applications</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Michael Wales </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3td4rfv" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud501_thumbnail.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Machine Learning for Trading</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Tucker Balch,Arpan Chakraborty </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3tcjeai" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/ud953_thumbnail.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Linear Algebra Refresher Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Chris Pryby</span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3x8JpPY" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d20vrrgs8k4bvw.cloudfront.net/images/courses/thumbnails/cs291_thumbnail.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Interactive 3D Graphics</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Autodesk </span></p>
-          <span class="badge text-bg-danger">Udacity</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3GKCKzX" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/c2/f9fcda619b497b9add618c5a5b1fd1/CS.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Build a Full Website using WordPress</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Coursera Project Network </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wwjHWA" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/c2/f9fcda619b497b9add618c5a5b1fd1/CS.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Increase SEO Traffic with WordPress</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Coursera Project Network </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wuSWSA" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/Water_treatment_course.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">مقدمة في معالجة مياه الشرب</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  أروى عبد الحي ،لوك ريتفيلد </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3yPUF6p" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D9%85%D9%82%D8%AF%D9%85%D8%A9_%D9%81%D9%8A_%D8%A7%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85_%D8%A7%D9%84%D8%AC%D8%B1%D8%A7%D9%81%D9%8A%D9%83%D9%8A_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">مقدمة في التصميم الجرافيكي</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> بهية شهاب،مدحت عيد،عامر دعبوب </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wEVoov" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D9%86%D9%81%D9%88%D8%AC%D8%B1%D8%A7%D9%81%D9%83%D8%B3_%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%B1%D9%83_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">الإنفوجرافيك المتحرك (الموشن إنفوجرافيكس)</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> د. محمد شلتوت</span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3LsGs1T" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/29/77d8a09b4c11e8b7a12503c978f9c1/penicillin.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Antibiotic Stewardship</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Stanford University </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3LfMSBr" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/Business-Plan-Course4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">خطة العمل ودراسة الجدوى المالية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> عودة حبش </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3P5LfcN" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://www.mahrati.com/assets/images/%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%88%D8%A5%D8%B5%D9%84%D8%A7%D8%AD%20%D8%A7%D9%84%D8%A3%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">صيانة وإصلاح الأجهزة الكهربية المنزلية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  خالد عثمان </span></p>
-          <span class="badge text-bg-danger">مهاراتي</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3kxfICA" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/topics/medicalneuro/large-icon.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Medical Neuroscience</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  Duke University </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3JX1aY3" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/99/7ab7c00f7b11e79b617dbb2116532d/contractnegotiations_Logo_080814d.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Successful Negotiation: Essential Strategies and Skills</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of Michigan </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3J15809" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%AA%D8%B3%D9%88%D9%8A%D9%82_%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A_%D8%A3%D9%81%D9%82%D9%8A.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">التسويق الإلكتروني - إدارة الحملات الرقمية المدفوعة</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  ابراهيم البواليز </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3iFE2Ba" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D9%85%D8%B3%D8%A7%D9%82_%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%88%D9%8A%D9%86%D9%88_%D8%A3%D9%81%D9%82%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">أساسيات برمجة الاردوينو ومشاريعه العملية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  م. محمود نادر </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3qJqp8m" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/revit.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">برنامج التصميم الهندسي Revit</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  محمد حمد </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3iEqtlA" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Specializations/Digital-Marketing3x-8_1_1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">التسويق الرقمي: الـ SEO، التحليل الرقمي، والتواجد الصحيح</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  جودت شمّاس </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wZUpRF" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/CV-Writing-Course.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">السيرة الذاتية - CV Writing</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  امارا زَبَير , أحمد الترعاني </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Ni3wCG" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA_%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">إدارة المنتجات الإلكترونية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> محمد موسى , إبراهيم أبوحجلة </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3JNPoyY" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/courses/Maternity_cover.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">مراحل الحمل - صحة الحامل والطفل</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  د.نيرة ثابت , د.هدى التومي </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uz7Nck" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D9%81%D8%A7%D8%AA_%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%8A%D8%A9_%D8%A3%D9%81%D9%82%D9%8A%D8%A9.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">الاسعافات الأولية </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> د. أحمد رمزي ,د. عفاف حجازي</span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3DgR2Xf" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/bb/62e6a0120b11e6bc32c330496bd91a/Career-Development.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">English for Career Development</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> University of Pennsylvania</span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uyGYVY" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/52/6dff15e6f247789eb5dafb9be90cb2/Learning-How-to-Learn-Logo_875X875px.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعّلم كيف تتعلم: أدوات ذهنية قوية لمساعدتك على إتقان موضوعات صعبة</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Linda Walker, barbara oakley </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3ixLvlB" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/f2/6d2dc380614917b3894150b24e5d7d/0780B90B-02EA-42C1-A1F4-900B1F66DB44.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Biomedical Visualisation</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">  University of Glasgow </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3um3r8x" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://edraak-marketing-uploads.edraak.org/Courses/%D8%B5%D9%88%D8%B1%D8%A9_%D8%AF%D9%88%D8%B1%D8%A9_%D8%B1%D9%88%D8%A8%D9%88%D8%AA%D8%A7%D8%AA_%D9%85%D8%B3%D8%AA%D8%B7%D9%8A%D9%84.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">صناعة الروبوتات</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> محمود نادر </span></p>
-          <span class="badge text-bg-danger">إدراك</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3JNideI" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/cs-02.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become a customer service specialist</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3txifSh" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/e0/49bdb0120e11e6a2d7a90dc288791b/Journalism.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">English for Journalism</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> University of Pennsylvania </span></p>
-          <span class="badge text-bg-danger">Coursera</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Na0hNJ" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/p03-03-dsk-e21-v4.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become a Data Analyst</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/37LEFXD" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/card-images/dms-01.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become a Digital Marketing Specialist</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wnnjum" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.05-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become an IT Support Specialist: Free Online Training Classes</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Mike Meyers </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3qiBltB" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.06-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become an IT Administrator: Free Online Training Classes</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Mike Meyers </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3ioMfK4" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://content.linkedin.com/content/dam/me/business/en-us/amp/learning-solutions/images/microsoft-reskilling/job-detail/p03.10-01-dsk-e01-v3.jpg.original.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Become a Sales Representative</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> LinkedIn Learning Platform </span></p>
-          <span class="badge text-bg-danger">LinkedIn Learning </span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3N3QCbz" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  
-  <div class="container">
-    <h2 class="text-center text-dark pt-5 pb-2" id="section2" >👇 <i class="bi bi-youtube"></i>كورسات مجانية على اليوتيوب 👇</h2>
-  <div class="row row-cols-2 row-cols-md-6 g-4" >
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/ja3l6-ikzR4/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> تصميم وبرمجة موقع يوديمي مع الرفع إلى الاستضافة  </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Nour Homsi </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3ci1TXM" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/w-vl8fFi4Qo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD-BDxv6V82kYztK_5opc6lMP9tew" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> تعلم المونتاج ببرنامج دافينشي ريزولف Davinci Resolve 16 </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> mostafa makram TV  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3IIorgr" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/ARE_ofLsVHw/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعلم | اللغة الإيطالية   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3PrqIzj" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/pz-lwONtVmM/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB9aD0fD1HGnZp8gwr4edRrna0Pmw" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Graphic Design Tutorials   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> ACADGILD</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uMpeHm" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/xsVTqzratPs/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Complete SEO Course for Beginners: Learn to Rank #1 in Google   </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Ahrefs </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Pwi2qY" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/iG2jotQo9NI/sddefault.jpg?v=62bd879b" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">HTML & CSS for Beginners | FREE COURSE </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3o07Efc" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/376vZ1wNYPA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Complete Laravel Tutorial | Laravel From Scratch </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Code With Dary </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3OFs7kY" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/LxO-6rlihSg/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn Photography [Full Course] by  Photographer Chris Bray</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Chris Bray</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xJDSzS" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/I9CGvbstiBw/sddefault.jpg?v=5f8071dd" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">The Basics of Print Design</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3nf1UOw" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/5zi5eG5Ui-Y/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Trigonometry full course for Beginners</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Academic Lesson</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3u0XPRz" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/hyctIDPRSqY/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Quantum Physics Full Course | Quantum Mechanics Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Academic Lesson </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3OkZ0DG" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/y-UA8SIhWG4/sddefault.jpg?v=5f8d8007" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Designing for WordPress (Using a Design System)</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3QGY7qy" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/t0syDUSbdfE/sddefault.jpg?v=62743c57" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHP Tutorial for Beginners  Full Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">Envato Tuts+ </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3NiJqXT" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/O0XHaN1-5eo/sddefault.jpg?v=6245f1fe" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn PHP for WordPress</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Envato Tuts+ </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3HMCEsg" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/B-ytMSuwbf8/sddefault.jpg?v=624f4ccf" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Web Design for Beginners</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">Envato Tuts+ </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xULHTc" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/PXMJ6FS7llk/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Automate with Python  Full Course for Beginners</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xTwDWb" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/GM6dQBmc-Xg/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn JavaScript in Arabic</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Elzero Web School</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3xZou3E" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/HvxmF0FUwrM/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">SQL Server Performance Essentials  Full Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3mxftIJ" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/8vfQ6SWBZ-U/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">React Testing Course for Beginners  Code and Test 3 Apps</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">FreeCodeCamp  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Q7nr8O" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/0n809nd4Zu4/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Build a Chrome Extension  Course for Beginners</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3mHqRBz" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/cT_ZYrS3tKc/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Build a Shopping Cart with JavaScript  Project Tutorial</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">FreeCodeCamp  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3MDUPBk" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/ylJz7N-dv1E/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Code an Amazon Clone Using Flutter and JavaScript Full Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Rivaan Ranawat </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Oasvaz" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/xcg9qq6SZ0w/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHP Bootcamp 2022</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3mgQ31z" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/ARE_ofLsVHw/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعلم | اللغة الفرنسية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">قناة مدرستنا   </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3LRj1zM" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/fq1yqdi4N7Q/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">OTC Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> DR Ahmed Badawy </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3afcEsG" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/k_WHxGJTZi0/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">سلسله (OTC) لتشخيص الامراض وعلاجها و للتدريب الصيدلي</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> AHMED pharmacy </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3lLZsy4" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/2BSU2PZw6bg/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">OTC كورس</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">الدكتور ابراهيم محمود</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3GqjJTp" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Musculoskeletal module</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/39HKaHG" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/LEqgRPA0U3Y/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Adobe Premiere Pro CC Course - كورس بريمير كامل</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> عمرو عطاالله </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3yTmvPd" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/7JysIkTyccs/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">اجعل حسابك جذاب على لينكدإن LinkedIn</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> غريب الشيخ  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Nt5sHK" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/Y3h2GNajvcY/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">biology</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">The Organic Chemistry Tutor </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3sMHa3s" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/QrNi9FmdlxY/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Typography & Design</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> the Futur </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wnf6WM" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/N2opj8XzYBY/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Google Sheets - Full Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> datalabcc</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3yFsaZe" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/bMknfKXIFA8/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">React Course - Beginner's Tutorial for React JavaScript Library [2022]</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Scrimba </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3wfl2Bc" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/hEAg47jdYMs/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Revit Tutorial for Beginners - Building Information Modeling [3D Design Course]</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Freecodecamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3whqlzT" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid" src="https://i.ytimg.com/vi/xSUm6iMtREA/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Build a Social Media App with Django Python Web Framework Tutorial</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Freecodecamp  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3NlPzmB" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cell module</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3w14z27" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Epithelium module</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3KGCOB4" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">CNS module</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3s8bo0P" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Cardiopulmonary module 2022</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/37UHPcg" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-   
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/2X_zvkj9HXA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Git module</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Dr Iman Nabil  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3vXgZIp" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/M5VM62MvKxM/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Pathophysiology</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Armando Hasudungan </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3Dv9MCt" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/8jLOx1hD3_o/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">C++ Programming Course - Beginner to Advanced</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3qT3NCt" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/VLflTjd3lWA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Number Systems</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> The Organic Chemistry Tutor</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uEBOaV" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/VPvVD8t02U8/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Flutter Course for Beginners 37-hour Cross Platform App Development Tutorial</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/38gbVqn" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/cARGOrtiWt4/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Build a portfolio website using HTML & CSS - بناء موقع كامل</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Islam Hesham (Codezilla)</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3tLgWPR" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/VtLXKU1PpRU/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">AutoCAD for Beginners - Full University Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> FreeCodeCamp</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3JMb7aE" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/PWuTLTFMtYw/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">كورس جافا سكريبت كامل بالعربي</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Abdelrahman Gamal </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3qADEsc" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/cfGS1hqsdBg/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"> تفسير سورة البقرة -الشيخ الشعراوي </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> الشيخ محمد متولي الشعراوي </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3NidrZ5" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/9Hf-OQ-MZ4A/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">يلا نتعلم مونتاج الفيديو من الصفر Adobe Premiere Pro 2021</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Mostafa Makram </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/36EX5c3" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/jjSpOtwZdLY/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعلم اللغة الألمانية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3utXHd0" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/MXKY0R5kqWs/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعلم اللغة الإسبانية</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> قناة مدرستنا </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3JDAbk6" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/26qCP6YLfiA/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">قواعد اللغة الانجليزية و شرح الازمنة </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> ZAmericanEnglish</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3izpAKN" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/YQT8zzmnqis/hqdefault.jpg?v=6049793e" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">الاكسيل من الصفر حتى الاحتراف في ساعة ونصف فقط</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Sherif Fathy Mohamed </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3qsIk37" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/BjfCWSFmIFI/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Web Application Penetration Testing Course</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Ebrahem Hegazy </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/36hb1cr" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/yD66BBLtcM8/hqdefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">تعليم الفوتوشوب فى ساعتين ونصف</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> عمرو عطاالله </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3imAVOv" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/X1ulCwyhCVM/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn CSS In Arabic</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School</span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/37NWG7Q" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/6QAELgirvjs/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn HTML In Arabic 2021</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success">Elzero Web School  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3uekDga" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/MHeirBPOI6w/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Algebra </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> The Organic Chemistry Tutor </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3ioTnWQ" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/BHzesnPF3kE/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">الإقتصاد الهندسي </h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Ahmed Aboul Fotouh </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3nfgeX8" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/ACOiGZoqC8w/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Learn Git & GitHub</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Elzero Web School  </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/3QJNUcX" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img class="img-fluid"  src="https://i.ytimg.com/vi/7nmKtI7fEmU/sddefault.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">ملخص كورس تعلم كيف تتعلم</h5>
-          <p><strong>by</strong> <span class="badge text-bg-success"> Ahmed Abouzaid </span></p>
-          <span class="badge text-bg-danger">Youtube</span>
-          <a class="btn btn-outline-success" href="https://bit.ly/39Lporn" target="_blank"> عرض الكورس </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
+       <!-- footer-->
 
-    <footer class="p-1 bg-dark text-center text-white position-relative">
-      <div class="container" class="row-align-items-center">
-        <p class="lead">Copyright &copy; 2022 <a href="https://leartutor.blogspot.com/" target="_blank" style="text-decoration: none;"><strong class="text-warning">LearTutor</strong></a></p>
+       <div class="footer pt-5 pb-5 text-white-50 text-center text-md-end bg-dark" dir="rtl">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <div class="info mb-5">
+                <a class="navbar-brand text-warning mb-4" href="index.html"> Courses by LearTutor </a>
+                <p class="mb-5 text-light">
+                   الكورسات المجانية تجدها هنا في مكان واحد شارك الموقع ليستفيد الجميع 
+                </p>
+                <div class="copyright text-light">
+                  بواسطة <span class="twl" ><a href="https://twitter.com/LeartutorF">LearTutor</a></span>
+                  <div class="text-light"> &copy; 2022 </div>
+                </div>
 
-        <a href="" class="position-absolute bottom-0 end-0  p-1"> <i class="bi bi-arrow-up-circle h1"></i></a>
-      </div>
 
-    </footer>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
+              </div>
+            </div>
+            <div class="col-md-6 col-6">
+              <div class="links">
+                <ul class="list-unstyled lh-lg text-light fo ">
+                  <li><a href="#section1">الأقسام</a></li>
+                  <li><a href="#Categories">الفلاتر</a></li>
+                  
+                </ul>
+
+                <ul class="d-flex mt-5 list-unstyled gap-3 mo">
+                  <li><a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram text-light" style="font-size: 1.5rem;"></i></a></li>
+                  <li><a href="https://twitter.com/LearTutor_AR" target="_blank" ><i class="bi bi-twitter text-light"style="font-size: 1.5rem;" ></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+       </div>
+       
+      
+
+       <!--  efooter-->
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="script.js" ></script>
+    </body>
 </html>
+
+
+
+
