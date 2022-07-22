@@ -18,3 +18,4 @@ tabsArray.forEach((ele)=>{
     });
      
 });
+
