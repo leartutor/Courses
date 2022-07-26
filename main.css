@@ -16,6 +16,10 @@
     font-weight: 700;
 }
 
+.navbar-brand > h1 {
+    font-weight: 700;
+}
+
 .nav-link{
     font-family: var(--font-c);
    
