@@ -94,23 +94,23 @@
 
 .tabs li {
     padding: 5px;
-    background-color: #18978F;
+    background-color: #198754;
     border-right: 1px solid #F6F6F6;
     cursor: pointer;
     transition: 0.2s;
     font-family: var(--font-t);
-    color: #F6F6F6;
+    color: #ffffff;
     font-weight: 700;
     border-radius: 5px;
 }
 
 .tabs li.active,
 .tabs li:hover {
-    background-color: #6c757d;
+    background-color: #dc3545;
 }
 
 .content {
-    background-color: #18978F;
+    background-color: #198754;
 }
 
 .content>div {
@@ -202,4 +202,44 @@
     content: '';
     display: block;
     clear: both;
+}
+
+
+.innertab {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.innertab li {
+    padding: 5px;
+    background-color: #198754;
+    border-right: 1px solid #F6F6F6;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--font-t);
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.innertab li.active,
+.innertab li:hover {
+    background-color: #dc3545;
+}
+
+.innercontent {
+    background-color: #198754;
+}
+
+.innercontent>div {
+    padding: 20px;
+}
+
+.innercontent>div:not(:first-child) {
+    display: none;
+
 }

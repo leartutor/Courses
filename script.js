@@ -19,6 +19,29 @@ tabsArray.forEach((ele) => {
 
 });
 
+//med
+let innnertab = document.querySelectorAll(".innertab li");
+let innertabArray = Array.from(innnertab);
+let innerdiv = document.querySelectorAll(".innercontent > div");
+let innerdivArray = Array.from(innerdiv);
+
+
+innertabArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        innertabArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        innerdivArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.conto).style.display = "flex";
+    })
+})
+
+//med
+
 
 
 const api = "https://leartutor.github.io/jsontest/Courses.json"
