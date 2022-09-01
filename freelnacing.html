@@ -31,11 +31,10 @@
 <body>
 
     <!--Navbar-->
-
     <nav class="navbar navbar-expand-lg bg-dark" dir="rtl">
         <div class="container">
             <a class="navbar-brand text-warning" href="index.html">
-                <h1>Courses by LearTutor</h1>
+                <h2>Courses by LearTutor</h2>
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -47,23 +46,20 @@
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="index.html">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#section1">الأقسام </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#Categories"> الفلاتر</a>
-                    </li>
 
                 </ul>
 
-                <button type="button" class="btn" position-relative>
-                    <a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram"
-                            style="font-size: 1.5rem;"></i></a>
-                </button>
-                <button type="button" class="btn" position-relative>
-                    <a href="https://twitter.com/LearTutor_AR" target="_blank"><i class="bi bi-twitter "
-                            style="font-size: 1.5rem;"></i></a>
-                </button>
+                <ul class="ulo">
+
+                    <button type="button" id="telegram" class="btn" position-relative>
+                        <a href="https://t.me/leartutorar" target="_blank" style="display: flex"> <span>Telegram</span>
+                            <i class="bi bi-telegram" style="font-size: 20px;"></i>
+                        </a>
+                    </button>
+                    <a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-size="large" data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </ul>
 
             </div>
         </div>
@@ -74,23 +70,42 @@
         <h2> Freelancing</h2>
     </div>
 
-    <div class="container">
-        <div class="freelancing row col row-cols-lg-4" id="freelancing">
 
+    <!--tabs-->
+    <ul class="tabse">
+        <li class="active" data-contm=".oneq"> التصميم </li>
+        <li data-contm=".twoq"> المونتاج </li>
+        <li data-contm=".threeq"> Copywriting </li>
+        <li data-contm=".sevenq">Voiceover</li>
+        <li data-contm=".fourq">برامج التعديل على الصوت </li>
+        <li data-contm=".fiveq">برامج مايكروسوفت</li>
+
+
+
+
+
+    </ul>
+    <div class="contentooe container">
+        <div class="oneq row col row-cols-lg-4 row-cols-md-3" id="designappf">
             <script>
-                const api = "https://leartutor.github.io/jsontest/Courses.json"
+                const apie = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
-                    const response = await fetch(api)
+                    const response = await fetch(apie)
                     const data = await response.json()
-                    printdata10(data)
+
+                    printdata533(data)
+
                 }
-                function printdata10(data) {
-                    const freelancing = document.querySelector("#freelancing")
+
+
+                function printdata533(data) {
+                    const program30 = document.querySelector("#designappf")
                     for (let i = 0; i < data.length; i++) {
-                        if (data[i].category.trim() !== "Freelancing") {
+
+                        if (data[i].innercategory !== "designapp") {
                             continue;
                         }
-                        freelancing.innerHTML += `<div class="col">
+                        program30.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
@@ -110,12 +125,222 @@
                 }
                 getData()
             </script>
+        </div>
+        <div class="twoq row col row-cols-lg-4 row-cols-md-3" id="montagef">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
 
+                    printdata534(data)
+
+                }
+
+
+                function printdata534(data) {
+                    const program31 = document.querySelector("#montagef")
+                    for (let i = 0; i < data.length; i++) {
+
+                        if (data[i].innercategory !== "montage") {
+                            continue;
+                        }
+                        program31.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
         </div>
     </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="threeq row col row-cols-lg-4 row-cols-md-3" id="copywriting">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata535(data)
+
+                }
+
+
+                function printdata535(data) {
+                    const program32 = document.querySelector("#copywriting")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "Freelancing") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "copywriting") {
+                            continue;
+                        }
+                        program32.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fourq row col row-cols-lg-4 row-cols-md-3" id="audioapp">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata436(data)
+
+                }
+
+
+                function printdata436(data) {
+                    const program23 = document.querySelector("#audioapp")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برامج و تطبيقات") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "audioapp") {
+                            continue;
+                        }
+                        program23.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fiveq row col row-cols-lg-4 row-cols-md-3" id="mos">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata437(data)
+
+                }
+
+
+                function printdata437(data) {
+                    const program24 = document.querySelector("#mos")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برامج و تطبيقات") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "mos") {
+                            continue;
+                        }
+                        program24.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+
+        <div class="sevenq row col row-cols-lg-4 row-cols-md-3" id="voiceover">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata555(data)
+
+                }
+
+
+                function printdata555(data) {
+                    const program555 = document.querySelector("#voiceover")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "Freelancing") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "voiceover") {
+                            continue;
+                        }
+                        program555.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+
+    </div>
+    <!--etabs-->
 
     <div class="container pt-3 pb-3">
-        <a class="btn btn-outline-primary" href="index.html">
+        <a class="btn btn-outline-success" href="index.html">
             <h2>عودة إلى الصفحة الرئيسية</h2>
         </a>
     </div>
@@ -129,7 +354,7 @@
     <div class="footer pt-5 pb-5 text-white-50 text-center text-md-end bg-dark" dir="rtl">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-4 col-lg-4">
                     <div class="info mb-5">
                         <a class="navbar-brand text-warning mb-4" href="index.html"> Courses by LearTutor </a>
                         <p class="mb-5 text-light">
@@ -143,19 +368,28 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-6">
+                <div class="col-md-8 col-8">
                     <div class="links">
                         <ul class="list-unstyled lh-lg text-light fo ">
-                            <li><a href="#section1">الأقسام</a></li>
-                            <li><a href="#Categories">الفلاتر</a></li>
+                            <li>
+                                <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page"
+                                    href="index.html">الرئيسية</a>
+                            </li>
+
 
                         </ul>
 
-                        <ul class="d-flex mt-5 list-unstyled gap-3 mo">
-                            <li><a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram text-light"
-                                        style="font-size: 1.5rem;"></i></a></li>
-                            <li><a href="https://twitter.com/LearTutor_AR" target="_blank"><i
-                                        class="bi bi-twitter text-light" style="font-size: 1.5rem;"></i></a></li>
+                        <ul class="d-flex mt-5 list-unstyled gap-3 mo" id="ofooter">
+                            <li><button type="button" id="telegram" class="btn" position-relative>
+                                    <a href="https://t.me/leartutorar" target="_blank"> <span>Telegram</span> <i
+                                            class="bi bi-telegram" style="font-size: 20px;"></i>
+                                    </a>
+                                </button></li>
+                            <li><a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw"
+                                    class="twitter-follow-button" data-size="large" data-show-screen-name="false"
+                                    data-show-count="false">Follow @LearTutor_AR</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -169,7 +403,7 @@
     <!--  efooter-->
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>

@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg bg-dark" dir="rtl">
         <div class="container">
             <a class="navbar-brand text-warning" href="index.html">
-                <h1>Courses by LearTutor</h1>
+                <h2>Courses by LearTutor</h2>
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
@@ -48,23 +48,20 @@
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="index.html">الرئيسية</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#section1">الأقسام </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#Categories"> الفلاتر</a>
-                    </li>
 
                 </ul>
 
-                <button type="button" class="btn" position-relative>
-                    <a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram"
-                            style="font-size: 1.5rem;"></i></a>
-                </button>
-                <button type="button" class="btn" position-relative>
-                    <a href="https://twitter.com/LearTutor_AR" target="_blank"><i class="bi bi-twitter "
-                            style="font-size: 1.5rem;"></i></a>
-                </button>
+                <ul class="ulo">
+
+                    <button type="button" id="telegram" class="btn" position-relative>
+                        <a href="https://t.me/leartutorar" target="_blank" style="display: flex"> <span>Telegram</span>
+                            <i class="bi bi-telegram" style="font-size: 20px;"></i>
+                        </a>
+                    </button>
+                    <a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-size="large" data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </ul>
 
             </div>
         </div>
@@ -75,28 +72,47 @@
         <h2> برمجة </h2>
     </div>
 
-    <div class="container">
-        <div class="Programming row col row-cols-lg-4 row-cols-md-3" id="progra">
 
 
+    <!--tabs-->
+
+    <ul class="progtabs">
+        <li class="active" data-conte=".onep">html & Css</li>
+        <li data-conte=".twop">javascript</li>
+        <li data-conte=".threep">Python</li>
+        <li data-conte=".fourp">React</li>
+        <li data-conte=".fivep">PHP & Laravel</li>
+        <li data-conte=".sixp">Cyber security</li>
+        <li data-conte=".eightp">Mobile app development</li>
+        <li data-conte=".ninep">C++</li>
+        <li data-conte=".tenp">Machine Learning</li>
+        <li data-conte=".sevenp">عام</li>
+
+
+    </ul>
+    <div class="inprogtabs container">
+        <div class="onep row col row-cols-lg-4 row-cols-md-3" id="html">
             <script>
-                const api = "https://leartutor.github.io/jsontest/Courses.json"
+                const apie = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
-                    const response = await fetch(api)
+                    const response = await fetch(apie)
                     const data = await response.json()
 
-                    printdata1(data)
+                    printdata333(data)
 
                 }
 
 
-                function printdata1(data) {
-                    const program = document.querySelector("#progra")
+                function printdata333(data) {
+                    const program1 = document.querySelector("#html")
                     for (let i = 0; i < data.length; i++) {
                         if (data[i].category.trim() !== "برمجة") {
                             continue;
                         }
-                        program.innerHTML += `<div class="col">
+                        if (data[i].innercategory !== "html") {
+                            continue;
+                        }
+                        program1.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
@@ -116,13 +132,391 @@
                 }
                 getData()
             </script>
+        </div>
+        <div class="twop row col row-cols-lg-4 row-cols-md-3" id="javascript">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata334(data)
+
+                }
 
 
+                function printdata334(data) {
+                    const program2 = document.querySelector("#javascript")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "javascript") {
+                            continue;
+                        }
+                        program2.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
         </div>
     </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="threep row col row-cols-lg-4 row-cols-md-3" id="python">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata335(data)
+
+                }
+
+
+                function printdata335(data) {
+                    const program3 = document.querySelector("#python")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "python") {
+                            continue;
+                        }
+                        program3.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fourp row col row-cols-lg-4 row-cols-md-3" id="react">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata336(data)
+
+                }
+
+
+                function printdata336(data) {
+                    const program4 = document.querySelector("#react")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "react") {
+                            continue;
+                        }
+                        program4.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fivep row col row-cols-lg-4 row-cols-md-3" id="php">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata337(data)
+
+                }
+
+
+                function printdata337(data) {
+                    const program5 = document.querySelector("#php")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "php") {
+                            continue;
+                        }
+                        program5.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sixp row col row-cols-lg-4 row-cols-md-3" id="cyber">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata338(data)
+
+                }
+
+
+                function printdata338(data) {
+                    const program6 = document.querySelector("#cyber")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "cyber") {
+                            continue;
+                        }
+                        program6.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sevenp row col row-cols-lg-4 row-cols-md-3" id="p3aam">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata340(data)
+
+                }
+
+
+                function printdata340(data) {
+                    const program8 = document.querySelector("#p3aam")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "p3aam") {
+                            continue;
+                        }
+                        program8.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="eightp row col row-cols-lg-4 row-cols-md-3" id="mobile">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata339(data)
+
+                }
+
+
+                function printdata339(data) {
+                    const program7 = document.querySelector("#mobile")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "mobile") {
+                            continue;
+                        }
+                        program7.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="ninep row col row-cols-lg-4 row-cols-md-3" id="cplusplus">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata341(data)
+
+                }
+
+
+                function printdata341(data) {
+                    const program9 = document.querySelector("#cplusplus")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "cplusplus") {
+                            continue;
+                        }
+                        program9.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="tenp row col row-cols-lg-4 row-cols-md-3" id="machine">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata342(data)
+
+                }
+
+
+                function printdata342(data) {
+                    const program10 = document.querySelector("#machine")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "machine") {
+                            continue;
+                        }
+                        program10.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+    </div>
+    <!--etabs-->
+
 
     <div class="container pt-3 pb-3">
-        <a class="btn btn-outline-primary" href="index.html">
+        <a class="btn btn-outline-success" href="index.html">
             <h2>عودة إلى الصفحة الرئيسية</h2>
         </a>
     </div>
@@ -136,7 +530,7 @@
     <div class="footer pt-5 pb-5 text-white-50 text-center text-md-end bg-dark" dir="rtl">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-4 col-lg-4">
                     <div class="info mb-5">
                         <a class="navbar-brand text-warning mb-4" href="index.html"> Courses by LearTutor </a>
                         <p class="mb-5 text-light">
@@ -150,19 +544,28 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-6">
+                <div class="col-md-8 col-8">
                     <div class="links">
                         <ul class="list-unstyled lh-lg text-light fo ">
-                            <li><a href="#section1">الأقسام</a></li>
-                            <li><a href="#Categories">الفلاتر</a></li>
+                            <li>
+                                <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page"
+                                    href="index.html">الرئيسية</a>
+                            </li>
+
 
                         </ul>
 
-                        <ul class="d-flex mt-5 list-unstyled gap-3 mo">
-                            <li><a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram text-light"
-                                        style="font-size: 1.5rem;"></i></a></li>
-                            <li><a href="https://twitter.com/LearTutor_AR" target="_blank"><i
-                                        class="bi bi-twitter text-light" style="font-size: 1.5rem;"></i></a></li>
+                        <ul class="d-flex mt-5 list-unstyled gap-3 mo" id="ofooter">
+                            <li><button type="button" id="telegram" class="btn" position-relative>
+                                    <a href="https://t.me/leartutorar" target="_blank"> <span>Telegram</span> <i
+                                            class="bi bi-telegram" style="font-size: 20px;"></i>
+                                    </a>
+                                </button></li>
+                            <li><a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw"
+                                    class="twitter-follow-button" data-size="large" data-show-screen-name="false"
+                                    data-show-count="false">Follow @LearTutor_AR</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </li>
                         </ul>
                     </div>
                 </div>

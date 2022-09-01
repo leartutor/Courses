@@ -36,7 +36,7 @@
   <nav class="navbar navbar-expand-lg bg-dark" dir="rtl">
     <div class="container">
       <a class="navbar-brand text-warning" href="index.html">
-        <h1>Courses by LearTutor</h1>
+        <h2>Courses by LearTutor</h2>
       </a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
@@ -52,19 +52,25 @@
             <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#section1">الأقسام </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#Categories"> الفلاتر</a>
+            <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#how"> كيف تدعمنا؟</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#fraq"> الأسئلة الشائعة</a>
           </li>
 
         </ul>
 
-        <button type="button" class="btn" position-relative>
-          <a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram"
-              style="font-size: 1.5rem;"></i></a>
-        </button>
-        <button type="button" class="btn" position-relative>
-          <a href="https://twitter.com/LearTutor_AR" target="_blank"><i class="bi bi-twitter "
-              style="font-size: 1.5rem;"></i></a>
-        </button>
+        <ul class="ulo">
+
+          <button type="button" id="telegram" class="btn" position-relative>
+            <a href="https://t.me/leartutorar" target="_blank" style="display: flex"> <span>Telegram</span> <i
+                class="bi bi-telegram" style="font-size: 20px;"></i>
+            </a>
+          </button>
+          <a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+            data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </ul>
 
       </div>
     </div>
@@ -114,7 +120,7 @@
 
   <div class="container">
     <h2 class="text-center text-dark pt-4" id="section1"> الأقسام </h2>
-    <div class="row col row-cols-lg-5" id="cardg">
+    <div class="row col row-cols-lg-5 row-cols-md-4" id="cardg">
       <div class="col">
         <div class="card ">
           <img class="img-fluid" src="langle.WebP" class="card-img-top" alt="...">
@@ -237,138 +243,150 @@
       </div>
     </div>
 
-    <section id="Categories">
-      <div class="container">
-        <div class="text-center pt-4 filters">الفلاتر</div>
-      </div>
 
-      <ul class="tabs">
+    <section class=" share">
+      <h2 class="text-center text-dark pt-4" id="how"> كيف تدعمنا ؟</h2>
+      <p dir="rtl"> يمكنك مساعدتنا من خلال مشاركة الموقع عبر المنصات المختلفة </p>
+      <div class="sharebtn">
+        <script async src="https://telegram.org/js/telegram-widget.js?19"
+          data-telegram-share-url="https://leartutor.github.io/Courses/" data-size="large"></script>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
+          data-url="https://leartutor.github.io/Courses/" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="kIqbzuKy"></script>
+        <div class="fb-share-button" data-href="https://leartutor.github.io/Courses/" data-layout="button"
+          data-size="large"><a target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleartutor.github.io%2FCourses%2F&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore">Share</a></div>
+        <!-- Other Page HTML -->
 
-        <li class="active" data-cont=".langle">تعلم
-          اللغات</li>
-        <li data-cont=".Programming"> برمجة </li>
-        <li data-cont=".medicine"> محتوى طبي </li>
-        <li data-cont=".progapps"> برامج وتطبيقات
-        </li>
-        <li data-cont=".marketing"> تسويق إلكتروني
-        </li>
-        <li data-cont=".studymat"> مواد دراسية
-        </li>
-        <li data-cont=".mahara"> تطوير الذات </li>
-        <li data-cont=".freelancing"> Freelancing
-        </li>
-        <li data-cont=".graphic"> Graphic design
-        </li>
-        <li data-cont=".dini"> ديني
-        </li>
-        <li data-cont=".other"> أخرى </li>
-      </ul>
-      <div class="content ">
-        <div class="langle  row col row-cols-lg-4 row-cols-md-3 " id="langle">
+        <div class="snapchat-creative-kit-share" data-share-url="https://leartutor.github.io/Courses/"></div>
 
-
-
-        </div>
-
-        <div class="Programming row col row-cols-lg-4 row-cols-md-3" id="programming">
-
-
-        </div>
-
-        <div class="medicine  row col row-cols-lg-4 row-cols-md-3" id="medicine">
-
-        </div>
-
-        <div class="progapps row col row-cols-lg-4 row-cols-md-3" id="progapps">
-
-        </div>
-
-        <div class="marketing  row col row-cols-lg-4 row-cols-md-3" id="marketing">
-
-
-        </div>
-
-        <div class="studymat row col row-cols-lg-4 row-cols-md-3" id="studymat">
-
-        </div>
-
-        <div class="mahara row col row-cols-lg-4 row-cols-md-3" id="mahara">
-
-
-        </div>
-
-        <div class="graphic row col row-cols-lg-4 row-cols-md-3" id="graphic">
-
-        </div>
-
-        <div class="dini  row col row-cols-lg-4 row-cols-md-3" id="dini">
-
-        </div>
-
-        <div class="other  row col row-cols-lg-4 row-cols-md-3" id="other">
-
-        </div>
-        <div class="freelancing row col row-cols-lg-4 row-cols-md-3" id="freelancing">
-
-        </div>
+        <!-- Other Page HTML -->
+        <script>
+          // Load the SDK asynchronously
+          (function (d, s, id) {
+            var js,
+              sjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://sdk.snapkit.com/js/v1/create.js";
+            sjs.parentNode.insertBefore(js, sjs);
+          })(document, "script", "snapkit-creative-kit-sdk");
+        </script>
 
 
       </div>
-
-
-
-
-
 
     </section>
 
-
-    <!-- footer-->
-
-    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-end bg-dark" dir="rtl">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-6">
-            <div class="info mb-5">
-              <a class="navbar-brand text-warning mb-4" href="index.html"> Courses by LearTutor </a>
-              <p class="mb-5 text-light">
-                الكورسات المجانية تجدها هنا في مكان واحد شارك الموقع ليستفيد الجميع
-              </p>
-              <div class="copyright text-light">
-                بواسطة <span class="twl"><a href="https://twitter.com/LeartutorF">LearTutor</a></span>
-                <div class="text-light"> &copy; 2022 </div>
-              </div>
-
-
+    <section class="faq">
+      <h2 class="text-center text-dark pt-4" id="fraq"> الأسئلة الشائعة </h2>
+      <div class="accordion pb-3" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <strong>لم أجد الكورس الذي أريده ماذا أفعل ؟ </strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" dir="rtl">
+              إذا لم تجد الكورس الذي تريد أرسل لنا رسالة عبر هذا الفورم بالكورس الذي تريد وسنحاول توفيره في
+              أقرب وقت إن شاء الله
+              <a href=" https://forms.gle/7ovR1a95YZY8722P9">اضغط هنا</a>
             </div>
           </div>
-          <div class="col-md-6 col-6">
-            <div class="links">
-              <ul class="list-unstyled lh-lg text-light fo ">
-                <li><a href="#section1">الأقسام</a></li>
-                <li><a href="#Categories">الفلاتر</a></li>
-
-              </ul>
-
-              <ul class="d-flex mt-5 list-unstyled gap-3 mo">
-                <li><a href="https://t.me/leartutorar" target="_blank"><i class="bi bi-telegram text-light"
-                      style="font-size: 1.5rem;"></i></a></li>
-                <li><a href="https://twitter.com/LearTutor_AR" target="_blank"><i class="bi bi-twitter text-light"
-                      style="font-size: 1.5rem;"></i></a></li>
-              </ul>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <strong>هل سأحصل على شهادة بعد إتمامي الكورسات ؟</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              بعض المواقع مثل كورسيرا توفر لك حضور الكورسات مجانا لكن دون الحصول على شهادة في هذه الحالة يمكنك الإستفادة
+              من محتوى الكورسات و اكتساب المهارات و يوجد مواقع مثل إدراك توفر لك شهادة بعد إتمامك للكورسات بشكل مجاني
+              المهم أن تستفيد من محتويات الكورسات سواء كانت بشهادة أم لا .
             </div>
           </div>
-
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <strong>كيف أحصل على الدعم المالي من كورسيرا ؟</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              يمكنك مشاهدة هذا الفيديو على قناتنا على تيليجرام لمعرفة الخطوات <a
+                href="https://t.me/leartutorar/177">اضغط هنا</a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+
+  </div>
+
+  <!-- footer-->
+  <div class="footer pt-5 pb-5 text-white-50 text-center text-md-end bg-dark" dir="rtl">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="info mb-5">
+            <a class="navbar-brand text-warning mb-4" href="index.html"> Courses by LearTutor </a>
+            <p class="mb-5 text-light">
+              الكورسات المجانية تجدها هنا في مكان واحد شارك الموقع ليستفيد الجميع
+            </p>
+            <div class="copyright text-light">
+              بواسطة <span class="twl"><a href="https://twitter.com/LeartutorF">LearTutor</a></span>
+              <div class="text-light"> &copy; 2022 </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-8 col-8">
+          <div class="links">
+            <ul class="list-unstyled lh-lg text-light fo ">
+              <li><a href="#section1">الأقسام</a></li>
+              <li><a href="#how"> كيف تدعمنا؟</a></li>
+              <li><a href="#fraq"> الأسئلة الشائعة</a></li>
+
+            </ul>
+
+            <ul class="d-flex mt-5 list-unstyled gap-3 mo" id="ofooter">
+              <li><button type="button" id="telegram" class="btn" position-relative>
+                  <a href="https://t.me/leartutorar" target="_blank"> <span>Telegram</span> <i class="bi bi-telegram"
+                      style="font-size: 20px;"></i>
+                  </a>
+                </button></li>
+              <li><a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                  data-size="large" data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
+  <!--  efooter-->
 
-
-
-    <!--  efooter-->
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>

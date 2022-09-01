@@ -42,6 +42,68 @@ innertabArray.forEach((ele) => {
 
 //med
 
+//prog
+let progtabs = document.querySelectorAll(".progtabs li");
+let progtabsArray = Array.from(progtabs);
+let innerprogdiv = document.querySelectorAll(".inprogtabs > div");
+let innerprogdivArray = Array.from(innerprogdiv);
+
+progtabsArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        progtabsArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        innerprogdivArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.conte).style.display = "flex";
+    })
+})
+//prog
+
+//apps
+let tabse = document.querySelectorAll(".tabse li");
+let tabseArray = Array.from(tabse);
+let contentooediv = document.querySelectorAll(".contentooe > div");
+let contentooeArray = Array.from(contentooediv);
+
+tabseArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        tabseArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        contentooeArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.contm).style.display = "flex";
+    })
+})
+//apps
+//n
+let tabso = document.querySelectorAll(".tabso li");
+let tabsoArray = Array.from(tabso);
+let contentooodiv = document.querySelectorAll(".contentooo > div");
+let contentoooArray = Array.from(contentooodiv);
+
+tabsoArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        tabsoArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        contentoooArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.contn).style.display = "flex";
+    })
+})
+//n
+
 
 
 const api = "https://leartutor.github.io/jsontest/Courses.json"
@@ -341,3 +403,5 @@ getData()
 
 
 //export { getData, printdata10, printdata9, printdata8, printdata7, printdata6, printdata5, printdata4, printdata3, printdata2, printdata1, printdata }
+
+
