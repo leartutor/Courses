@@ -104,6 +104,47 @@ tabsoArray.forEach((ele) => {
 })
 //n
 
+//study
+let tabsaa = document.querySelectorAll(".tabsaa li");
+let tabsaaArray = Array.from(tabsaa);
+let contentaadiv = document.querySelectorAll(".contentaa > div");
+let contentaaArray = Array.from(contentaadiv)
+
+tabsaaArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        tabsaaArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        contentaaArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.contaa).style.display = "flex";
+    })
+})
+//estudy
+//language
+let tabsbb = document.querySelectorAll(".tabsbb li");
+let tabsbbArray = Array.from(tabsbb);
+let contentbbdiv = document.querySelectorAll(".contentbb > div");
+let contentbbArray = Array.from(contentbbdiv)
+
+tabsbbArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        tabsbbArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        contentbbArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.contbb).style.display = "flex";
+    })
+})
+//elang
+
 
 
 const api = "https://leartutor.github.io/jsontest/Courses.json"

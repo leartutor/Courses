@@ -85,6 +85,7 @@
         <li data-conte=".sixp">Cyber security</li>
         <li data-conte=".eightp">Mobile app development</li>
         <li data-conte=".ninep">C++</li>
+        <li data-conte=".elevenp">Angular</li>
         <li data-conte=".tenp">Machine Learning</li>
         <li data-conte=".sevenp">عام</li>
 
@@ -449,6 +450,48 @@
                             continue;
                         }
                         program9.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="elevenp row col row-cols-lg-4 row-cols-md-3" id="angular">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata3410000(data)
+
+                }
+
+
+                function printdata3410000(data) {
+                    const program90000 = document.querySelector("#angular")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "angular") {
+                            continue;
+                        }
+                        program90000.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">

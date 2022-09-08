@@ -74,6 +74,7 @@
     <!--tabs-->
     <ul class="tabse">
         <li class="active" data-contm=".oneq"> التصميم </li>
+        <li data-contm=".sixq"> مواقع الفريلانس </li>
         <li data-contm=".twoq"> المونتاج </li>
         <li data-contm=".threeq"> Copywriting </li>
         <li data-contm=".sevenq">Voiceover</li>
@@ -300,18 +301,60 @@
                     const response = await fetch(apie)
                     const data = await response.json()
 
+                    printdata5555(data)
+
+                }
+
+
+                function printdata5555(data) {
+                    const program5555 = document.querySelector("#voiceover")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "Freelancing") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "voiceover") {
+                            continue;
+                        }
+                        program5555.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sixq row col row-cols-lg-4 row-cols-md-3" id="fweb">
+            <script>
+                const apiaa = "https://leartutor.github.io/jsontest/Courses.json"
+                async function getData() {
+                    const response = await fetch(apiaa)
+                    const data = await response.json()
+
                     printdata555(data)
 
                 }
 
 
                 function printdata555(data) {
-                    const program555 = document.querySelector("#voiceover")
+                    const program555 = document.querySelector("#fweb")
                     for (let i = 0; i < data.length; i++) {
                         if (data[i].category.trim() !== "Freelancing") {
                             continue;
                         }
-                        if (data[i].innercategory !== "voiceover") {
+                        if (data[i].innercategory !== "fweb") {
                             continue;
                         }
                         program555.innerHTML += `<div class="col">

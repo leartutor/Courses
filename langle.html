@@ -71,48 +71,230 @@
         <h2>تعلم اللغات</h2>
     </div>
 
-    <div class="container">
-        <div class="langle  row col row-cols-lg-4 row-cols-md-3" id="langl">
 
+
+    <!--tabs-->
+    <ul class="tabsbb">
+        <li class="active" data-contbb=".onebb"> اللغة الإنجليزية </li>
+        <li data-contbb=".twobb"> اللغة الإسبانية </li>
+        <li data-contbb=".threebb"> اللغة الألمانية </li>
+        <li data-contbb=".fourbb"> اللغة الفرنسية </li>
+        <li data-contbb=".fivebb"> اللغة الإيطالية </li>
+
+
+
+
+
+    </ul>
+    <div class="contentbb container">
+        <div class="onebb row col row-cols-lg-4 row-cols-md-3" id="englishlan">
             <script>
-                const api = "https://leartutor.github.io/jsontest/Courses.json"
+                const apieo = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
-                    const response = await fetch(api)
+                    const response = await fetch(apieo)
                     const data = await response.json()
-                    printdata(data)
+
+                    printdata5510(data)
+
                 }
 
-                function printdata(data) {
-                    const header = document.querySelector("#langl")
+
+                function printdata5510(data) {
+                    const program5510 = document.querySelector("#englishlan")
                     for (let i = 0; i < data.length; i++) {
-                        if (data[i].category.trim() !== "تعلم اللغات") {
+
+                        if (data[i].innercategory !== "englishlan") {
                             continue;
                         }
-                        header.innerHTML += `<div class="col">
-    <div class="card h-100">
-        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
-            alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${data[i].title}</h5>
-            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
-            <span class="badge text-bg-danger">${data[i].platform}</span>
-            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
-            </a>
-        </div>
+                        program5510.innerHTML += `<div class="col">
+<div class="card h-100">
+    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${data[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+        <span class="badge text-bg-danger">${data[i].platform}</span>
+        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+        </a>
     </div>
+</div>
 </div>`
 
                     }
 
 
+                }
+                getData()
+            </script>
+        </div>
+        <div class="twobb row col row-cols-lg-4 row-cols-md-3" id="spanishlan">
+            <script>
+                const ap = "https://leartutor.github.io/jsontest/Courses.json"
+                async function getData() {
+                    const response = await fetch(ap)
+                    const data = await response.json()
+
+                    printdata5511(data)
+
+                }
+
+
+                function printdata5511(data) {
+                    const program5511 = document.querySelector("#spanishlan")
+                    for (let i = 0; i < data.length; i++) {
+
+                        if (data[i].innercategory !== "spanishlan") {
+                            continue;
+                        }
+                        program5511.innerHTML += `<div class="col">
+<div class="card h-100">
+    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${data[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+        <span class="badge text-bg-danger">${data[i].platform}</span>
+        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+        </a>
+    </div>
+</div>
+</div>`
+
+                    }
+
 
                 }
                 getData()
             </script>
-
-
         </div>
+        <div class="threebb row col row-cols-lg-4 row-cols-md-3" id="germanlan">
+            <script>
+                //const apieoo = "Courses.json"
+                async function getData() {
+                    const response = await fetch(ap)
+                    const data = await response.json()
+
+                    printdata5512(data)
+
+                }
+
+
+                function printdata5512(data) {
+                    const program5512 = document.querySelector("#germanlan")
+                    for (let i = 0; i < data.length; i++) {
+
+                        if (data[i].innercategory !== "germanlan") {
+                            continue;
+                        }
+                        program5512.innerHTML += `<div class="col">
+<div class="card h-100">
+    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${data[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+        <span class="badge text-bg-danger">${data[i].platform}</span>
+        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+        </a>
     </div>
+</div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fourbb row col row-cols-lg-4 row-cols-md-3" id="frenchlan">
+            <script>
+                //const apieoo = "Courses.json"
+                async function getData() {
+                    const response = await fetch(ap)
+                    const data = await response.json()
+
+                    printdata5513(data)
+
+                }
+
+
+                function printdata5513(data) {
+                    const program5513 = document.querySelector("#frenchlan")
+                    for (let i = 0; i < data.length; i++) {
+
+                        if (data[i].innercategory !== "frenchlan") {
+                            continue;
+                        }
+                        program5513.innerHTML += `<div class="col">
+<div class="card h-100">
+    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${data[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+        <span class="badge text-bg-danger">${data[i].platform}</span>
+        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+        </a>
+    </div>
+</div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fivebb row col row-cols-lg-4 row-cols-md-3" id="italianlan">
+            <script>
+                //const apieoo = "Courses.json"
+                async function getData() {
+                    const response = await fetch(ap)
+                    const data = await response.json()
+
+                    printdata5514(data)
+
+                }
+
+
+                function printdata5514(data) {
+                    const program5514 = document.querySelector("#italianlan")
+                    for (let i = 0; i < data.length; i++) {
+
+                        if (data[i].innercategory !== "italianlan") {
+                            continue;
+                        }
+                        program5514.innerHTML += `<div class="col">
+<div class="card h-100">
+    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${data[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+        <span class="badge text-bg-danger">${data[i].platform}</span>
+        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+        </a>
+    </div>
+</div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!--etabs-->
 
     <div class="container pt-3 pb-3">
         <a class="btn btn-outline-success" href="index.html">
@@ -176,7 +358,7 @@
     <!--  efooter-->
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
