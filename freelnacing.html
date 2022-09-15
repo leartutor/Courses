@@ -75,16 +75,13 @@
     <ul class="tabse">
         <li class="active" data-contm=".oneq"> التصميم </li>
         <li data-contm=".sixq"> مواقع الفريلانس </li>
+        <li data-contm=".eightq">Graphic Design</li>
+        <li data-contm=".nineq">Marketing</li>
         <li data-contm=".twoq"> المونتاج </li>
         <li data-contm=".threeq"> Copywriting </li>
         <li data-contm=".sevenq">Voiceover</li>
         <li data-contm=".fourq">برامج التعديل على الصوت </li>
         <li data-contm=".fiveq">برامج مايكروسوفت</li>
-
-
-
-
-
     </ul>
     <div class="contentooe container">
         <div class="oneq row col row-cols-lg-4 row-cols-md-3" id="designappf">
@@ -358,6 +355,78 @@
                             continue;
                         }
                         program555.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+
+        <div class="eightq row col row-cols-lg-4 row-cols-md-3" id="graphic">
+            <script>
+                const api = "https://leartutor.github.io/jsontest/Courses.json"
+                async function getData() {
+                    const response = await fetch(api)
+                    const data = await response.json()
+                    printdata7(data)
+                }
+                function printdata7(data) {
+                    const graphic = document.querySelector("#graphic")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "Graphic design") {
+                            continue;
+                        }
+                        graphic.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+
+        <div class="nineq row col row-cols-lg-4 row-cols-md-3" id="marketin">
+            <script>
+                //const api = "https://leartutor.github.io/jsontest/Courses.json"
+                async function getData() {
+                    const response = await fetch(api)
+                    const data = await response.json()
+                    printdata4(data)
+                }
+                function printdata4(data) {
+                    const marketing = document.querySelector("#marketin")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "تسويق إلكتروني") {
+                            continue;
+                        }
+                        marketing.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">

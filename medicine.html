@@ -78,6 +78,7 @@
         <li data-conto=".four">Histology</li>
         <li data-conto=".five">Biochemistry</li>
         <li data-conto=".six">Physiology</li>
+        <li data-conto=".eight"> Radiology </li>
         <li data-conto=".seven">عام</li>
     </ul>
     <div class="innercontent container">
@@ -334,6 +335,45 @@
                             continue;
                         }
                         medicinei.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="eight row col row-cols-lg-4 row-cols-md-3" id="radiology">
+            <script>
+                //const apim = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apil)
+                    const data = await response.json()
+                    printdata2929(data)
+                }
+
+                function printdata2929(data) {
+                    const medicine2929 = document.querySelector("#radiology")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "محتوى طبي") {
+                            continue;
+                        }
+                        if (data[i].innercategory.trim() !== "radiology") {
+                            continue;
+                        }
+                        medicine2929.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">

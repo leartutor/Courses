@@ -80,13 +80,14 @@
         <li class="active" data-conte=".onep">html & Css</li>
         <li data-conte=".twop">javascript</li>
         <li data-conte=".threep">Python</li>
-        <li data-conte=".fourp">React</li>
+        <li data-conte=".tenp">Machine Learning</li>
         <li data-conte=".fivep">PHP & Laravel</li>
         <li data-conte=".sixp">Cyber security</li>
         <li data-conte=".eightp">Mobile app development</li>
         <li data-conte=".ninep">C++</li>
         <li data-conte=".elevenp">Angular</li>
-        <li data-conte=".tenp">Machine Learning</li>
+        <li data-conte=".fourp">React</li>
+        <li data-conte=".vuep">Vue</li>
         <li data-conte=".sevenp">عام</li>
 
 
@@ -114,6 +115,48 @@
                             continue;
                         }
                         program1.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="vuep row col row-cols-lg-4 row-cols-md-3" id="vue">
+            <script>
+                //const apie = "Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata3333(data)
+
+                }
+
+
+                function printdata3333(data) {
+                    const program13 = document.querySelector("#vue")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "vue") {
+                            continue;
+                        }
+                        program13.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
@@ -262,7 +305,7 @@
         </div>
         <div class="fivep row col row-cols-lg-4 row-cols-md-3" id="php">
             <script>
-                //const apie = "/Courses.json"
+                //const apiek = "Courses.json"
                 async function getData() {
                     const response = await fetch(apie)
                     const data = await response.json()
@@ -554,6 +597,9 @@
                 getData()
             </script>
         </div>
+
+
+
     </div>
     <!--etabs-->
 
