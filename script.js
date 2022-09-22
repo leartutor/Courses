@@ -144,6 +144,37 @@ tabsbbArray.forEach((ele) => {
     })
 })
 //elang
+////////////----->
+let tabstu = document.querySelectorAll(".tabstu li");
+let tabstuArray = Array.from(tabstu);
+let contentstudiv = document.querySelectorAll(".contentstu > div");
+let contentstuArray = Array.from(contentstudiv)
+
+tabstuArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+
+        tabstuArray.forEach((ele) => {
+            ele.classList.remove("active")
+        });
+        e.currentTarget.classList.add("active");
+        contentstuArray.forEach((div) => {
+            div.style.display = "none";
+        });
+        document.querySelector(e.currentTarget.dataset.contstu).style.display = "flex";
+    })
+})
+
+
+
+
+
+
+
+
+////////////////////////==>>
+
+
+
 
 
 

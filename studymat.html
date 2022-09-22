@@ -31,7 +31,6 @@
 <body>
 
     <!--Navbar-->
-
     <nav class="navbar navbar-expand-lg bg-dark" dir="rtl">
         <div class="container">
             <a class="navbar-brand text-warning" href="index.html">
@@ -47,19 +46,21 @@
                     <li class="nav-item">
                         <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="index.html">الرئيسية</a>
                     </li>
-
                 </ul>
 
                 <ul class="ulo">
-
                     <button type="button" id="telegram" class="btn" position-relative>
-                        <a href="https://t.me/leartutorar" target="_blank" style="display: flex"> <span>Telegram</span>
-                            <i class="bi bi-telegram" style="font-size: 20px;"></i>
+                        <a href="https://t.me/leartutorar" target="_blank" style="display: flex">
+                            <span>Telegram</span>
+                            <i class="bi bi-telegram" style="font-size: 20px"></i>
                         </a>
                     </button>
-                    <a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                        data-size="large" data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <button type="button" id="telegram" class="btn" position-relative>
+                        <a href="https://twitter.com/LearTutor_AR" target="_blank" style="display: flex">
+                            <span>Twitter</span>
+                            <i class="bi bi-twitter" style="font-size: 20px"></i>
+                        </a>
+                    </button>
                 </ul>
 
             </div>
@@ -71,23 +72,40 @@
         <h2> مواد دراسية </h2>
     </div>
 
-    <div class="container">
-        <div class="studymat row col row-cols-lg-4 row-cols-md-3" id="studymat">
 
+
+    <!--tabs-->
+    <ul class="tabstu">
+        <li class="active" data-contstu=".onestu"> الكيمياء </li>
+        <li data-contstu=".twostu"> الفيزياء </li>
+        <li data-contstu=".threestu"> الأحياء </li>
+        <li data-contstu=".fourstu"> الرياضيات </li>
+        <li data-contstu=".fivestu">عام</li>
+
+    </ul>
+    <div class="contentstu container">
+        <div class="onestu row col row-cols-lg-4 row-cols-md-3" id="chemistry">
             <script>
-                const api = "https://leartutor.github.io/jsontest/Courses.json"
+                const apie = "./Courses.json"
                 async function getData() {
-                    const response = await fetch(api)
+                    const response = await fetch(apie)
                     const data = await response.json()
-                    printdata5(data)
+
+                    printdatastu1(data)
+
                 }
-                function printdata5(data) {
-                    const studymat = document.querySelector("#studymat")
+
+
+                function printdatastu1(data) {
+                    const programstu1 = document.querySelector("#chemistry")
                     for (let i = 0; i < data.length; i++) {
                         if (data[i].category.trim() !== "مواد دراسية") {
                             continue;
                         }
-                        studymat.innerHTML += `<div class="col">
+                        if (data[i].innercategory.trim() !== "chemistry") {
+                            continue;
+                        }
+                        programstu1.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
@@ -107,12 +125,176 @@
                 }
                 getData()
             </script>
+        </div>
+        <div class="twostu row col row-cols-lg-4 row-cols-md-3" id="physics">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatastu2(data)
+
+                }
 
 
+                function printdatastu2(data) {
+                    const programstu2 = document.querySelector("#physics")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "مواد دراسية") {
+                            continue;
+                        }
+                        if (data[i].innercategory.trim() !== "physics") {
+                            continue;
+                        }
+                        programstu2.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="threestu row col row-cols-lg-4 row-cols-md-3" id="biology">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatastu3(data)
+
+                }
+
+                function printdatastu3(data) {
+                    const programstu3 = document.querySelector("#biology")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "مواد دراسية") {
+                            continue;
+                        }
+                        if (data[i].innercategory.trim() !== "biology") {
+                            continue;
+                        }
+                        programstu3.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fourstu row col row-cols-lg-4 row-cols-md-3" id="matho">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatastu4(data)
+
+                }
+
+                function printdatastu4(data) {
+                    const programstu4 = document.querySelector("#matho")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "مواد دراسية") {
+                            continue;
+                        }
+                        if (data[i].innercategory.trim() !== "matho") {
+                            continue;
+                        }
+                        programstu4.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="fivestu row col row-cols-lg-4 row-cols-md-3" id="gloglo">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatastu5(data)
+
+                }
+
+                function printdatastu5(data) {
+                    const programstu5 = document.querySelector("#gloglo")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "مواد دراسية") {
+                            continue;
+                        }
+                        if (data[i].innercategory.trim() !== "gloglo") {
+                            continue;
+                        }
+                        programstu5.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
         </div>
 
-    </div>
 
+    </div>
+    <!--etabs-->
 
 
 
@@ -156,18 +338,25 @@
                             </li>
 
 
+
                         </ul>
 
                         <ul class="d-flex mt-5 list-unstyled gap-3 mo" id="ofooter">
-                            <li><button type="button" id="telegram" class="btn" position-relative>
-                                    <a href="https://t.me/leartutorar" target="_blank"> <span>Telegram</span> <i
-                                            class="bi bi-telegram" style="font-size: 20px;"></i>
+                            <li>
+                                <button type="button" id="telegram" class="btn" position-relative>
+                                    <a href="https://t.me/leartutorar" target="_blank">
+                                        <span>Telegram</span>
+                                        <i class="bi bi-telegram" style="font-size: 20px"></i>
                                     </a>
-                                </button></li>
-                            <li><a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw"
-                                    class="twitter-follow-button" data-size="large" data-show-screen-name="false"
-                                    data-show-count="false">Follow @LearTutor_AR</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" id="telegram" class="btn" position-relative>
+                                    <a href="https://twitter.com/LearTutor_AR" target="_blank" style="display: flex">
+                                        <span>Twitter</span>
+                                        <i class="bi bi-twitter" style="font-size: 20px"></i>
+                                    </a>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -176,7 +365,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!--  efooter-->

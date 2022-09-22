@@ -191,7 +191,8 @@
 .tabso,
 .tabse,
 .tabsaa,
-.tabsbb {
+.tabsbb,
+.tabstu {
     display: flex;
     list-style: none;
     padding: 0;
@@ -206,7 +207,8 @@
 .tabso li,
 .tabse li,
 .tabsaa li,
-.tabsbb li {
+.tabsbb li,
+.tabstu li {
     padding: 5px;
     background-color: #198754;
     border-right: 1px solid #F6F6F6;
@@ -225,12 +227,14 @@
 .tabse li.active,
 .tabsaa li.active,
 .tabsbb li.active,
+.tabstu li.active,
 .innertab li:hover,
 .progtab li:hover,
 .tabso li:hover,
 .tabse li:hover,
 .tabsaa li:hover,
-.tabsbb li:hover {
+.tabsbb li:hover,
+.tabstu li:hover {
     background-color: #dc3545;
 }
 
@@ -240,7 +244,8 @@
 .contentooo,
 .contentooe,
 .contentaa,
-.contentbb {
+.contentbb,
+.contentstu {
     background-color: #198754;
 }
 
@@ -249,7 +254,8 @@
 .contentooo>div,
 .contentooe>div,
 .contentaa>div,
-.contentbb>div {
+.contentbb>div,
+.contentstu>div {
     padding: 20px;
 }
 
@@ -258,7 +264,8 @@
 .contentooo>div:not(:first-child),
 .contentooe>div:not(:first-child),
 .contentaa>div:not(:first-child),
-.contentbb>div:not(:first-child) {
+.contentbb>div:not(:first-child),
+.contentstu>div:not(:first-child) {
     display: none;
 
 }
@@ -413,4 +420,10 @@
 
 .text span {
     margin-right: 5px;
+}
+
+.main button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }

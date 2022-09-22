@@ -51,9 +51,7 @@
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#section1">الأقسام </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#how"> كيف تدعمنا؟</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="#fraq"> الأسئلة الشائعة</a>
           </li>
@@ -61,15 +59,18 @@
         </ul>
 
         <ul class="ulo">
-
           <button type="button" id="telegram" class="btn" position-relative>
-            <a href="https://t.me/leartutorar" target="_blank" style="display: flex"> <span>Telegram</span> <i
-                class="bi bi-telegram" style="font-size: 20px;"></i>
+            <a href="https://t.me/leartutorar" target="_blank" style="display: flex">
+              <span>Telegram</span>
+              <i class="bi bi-telegram" style="font-size: 20px"></i>
             </a>
           </button>
-          <a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
-            data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <button type="button" id="telegram" class="btn" position-relative>
+            <a href="https://twitter.com/LearTutor_AR" target="_blank" style="display: flex">
+              <span>Twitter</span>
+              <i class="bi bi-twitter" style="font-size: 20px"></i>
+            </a>
+          </button>
         </ul>
 
       </div>
@@ -82,7 +83,11 @@
     <div class="text">
       <h1 class="text-center">Courses by LearTutor </h1>
       <p> <span>الموقع مجاني و غير ربحي </span> <i class="bi bi-arrow-left-circle"> </i> </p>
-      <p> <span> أكثر من 235 كورس تعليمي</span> <i class="bi bi-arrow-left-circle"> </i> </p>
+      <p> <span> أكثر من 260 كورس تعليمي</span> <i class="bi bi-arrow-left-circle"> </i> </p>
+      <p> <span> انضم إلينا على تيليجرام 👇 ليصلك إشعار عند إضافة كورسات جديدة للموقع </span> <i
+          class="bi bi-arrow-left-circle"> </i> </p>
+      <button class="btn btn-danger "><a href="https://t.me/leartutorar" target="_blank">👉 قناة التيليجرام
+          👈</a></button>
 
     </div>
     <div class="image"><img src="18.png" alt="Logo" class="loogo" /></div>
@@ -94,8 +99,9 @@
     <div class="row col row-cols-lg-5 row-cols-md-4" id="cardg">
       <div class="col">
         <div class="card ">
-          <div class="background-sec">
+          <div class="background-sec" id="numnum">
             <h3>تعلم اللغات</h3>
+
           </div>
           <div class="card-body">
             <a class="btn btn-outline-dark" href="langle.html">
@@ -185,19 +191,6 @@
       <div class="col">
         <div class="card ">
           <div class="background-sec">
-            <h3>أخرى</h3>
-          </div>
-          <div class="card-body">
-
-            <a class="btn btn-outline-dark " href="other.html">
-              <h3> عرض </h3>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card ">
-          <div class="background-sec">
             <h3>مواد دراسية </h3>
           </div>
           <div class="card-body">
@@ -208,47 +201,22 @@
           </div>
         </div>
       </div>
-    </div>
+      <div class="col">
+        <div class="card ">
+          <div class="background-sec">
+            <h3>أخرى</h3>
+          </div>
+          <div class="card-body">
 
-
-    <section class=" share">
-      <h2 class="text-center text-dark pt-4" id="how"> كيف تدعمنا ؟</h2>
-      <p dir="rtl"> يمكنك مساعدتنا من خلال مشاركة الموقع عبر المنصات المختلفة </p>
-      <div class="sharebtn">
-        <script async src="https://telegram.org/js/telegram-widget.js?19"
-          data-telegram-share-url="https://leartutor.github.io/Courses/" data-size="large"></script>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
-          data-url="https://leartutor.github.io/Courses/" data-show-count="false">Tweet</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-          src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="kIqbzuKy"></script>
-        <div class="fb-share-button" data-href="https://leartutor.github.io/Courses/" data-layout="button"
-          data-size="large"><a target="_blank"
-            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fleartutor.github.io%2FCourses%2F&amp;src=sdkpreparse"
-            class="fb-xfbml-parse-ignore">Share</a></div>
-        <!-- Other Page HTML -->
-
-        <div class="snapchat-creative-kit-share" data-share-url="https://leartutor.github.io/Courses/"></div>
-
-        <!-- Other Page HTML -->
-        <script>
-          // Load the SDK asynchronously
-          (function (d, s, id) {
-            var js,
-              sjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://sdk.snapkit.com/js/v1/create.js";
-            sjs.parentNode.insertBefore(js, sjs);
-          })(document, "script", "snapkit-creative-kit-sdk");
-        </script>
-
-
+            <a class="btn btn-outline-dark " href="other.html">
+              <h3> عرض </h3>
+            </a>
+          </div>
+        </div>
       </div>
 
-    </section>
+    </div>
+
 
     <section class="faq">
       <h2 class="text-center text-dark pt-4" id="fraq"> الأسئلة الشائعة </h2>
@@ -328,20 +296,27 @@
           <div class="links">
             <ul class="list-unstyled lh-lg text-light fo ">
               <li><a href="#section1">الأقسام</a></li>
-              <li><a href="#how"> كيف تدعمنا؟</a></li>
+
               <li><a href="#fraq"> الأسئلة الشائعة</a></li>
 
             </ul>
 
             <ul class="d-flex mt-5 list-unstyled gap-3 mo" id="ofooter">
-              <li><button type="button" id="telegram" class="btn" position-relative>
-                  <a href="https://t.me/leartutorar" target="_blank"> <span>Telegram</span> <i class="bi bi-telegram"
-                      style="font-size: 20px;"></i>
+              <li>
+                <button type="button" id="telegram" class="btn" position-relative>
+                  <a href="https://t.me/leartutorar" target="_blank">
+                    <span>Telegram</span>
+                    <i class="bi bi-telegram" style="font-size: 20px"></i>
                   </a>
-                </button></li>
-              <li><a href="https://twitter.com/LearTutor_AR?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                  data-size="large" data-show-screen-name="false" data-show-count="false">Follow @LearTutor_AR</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </button>
+              </li>
+              <li>
+                <button type="button" id="telegram" class="btn" position-relative>
+                  <a href="https://twitter.com/LearTutor_AR" target="_blank" style="display: flex">
+                    <span>Twitter</span>
+                    <i class="bi bi-twitter" style="font-size: 20px"></i>
+                  </a>
+                </button>
               </li>
             </ul>
           </div>
