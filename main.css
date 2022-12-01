@@ -496,4 +496,10 @@ a.btn-outline-success {
     font-weight: bold;
 }
 
+.card-title {
+    font-family: 'Harmattan';
+    font-weight: 900;
+    font-size: x-large;
+}
+
 /*Card*/
