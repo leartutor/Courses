@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Cairo:wght@300;400;500;600;700;800;900&family=Edu+SA+Beginner:wght@500;600;700&family=Tajawal:wght@300;400;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap');
 
 :root {
     --font-v: 'Blaka', cursive;
@@ -8,6 +9,8 @@
     --font-f: 'Edu SA Beginner', cursive;
     --font-t: 'Tajawal', sans-serif;
     --font-A: 'Almarai', sans-serif;
+    --font-Ha: 'Harmattan', sans-serif;
+
 }
 
 /*navbar*/
@@ -478,3 +481,19 @@
         -o-transform: translatex(0%);
     }
 }
+
+.cardqesmname {
+    font-family: var(--font-Ha);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/*Card*/
+
+a.btn-outline-success {
+    font-family: var(--font-Ha);
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*Card*/

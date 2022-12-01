@@ -82,6 +82,7 @@
         <li class="active" data-conte=".onep">html & Css</li>
         <li data-conte=".twop">javascript</li>
         <li data-conte=".threep">Python</li>
+        <li data-conte=".wordpressp">Wordpress</li>
         <li data-conte=".tenp">Machine Learning</li>
         <li data-conte=".fivep">PHP & Laravel</li>
         <li data-conte=".sixp">Cyber security</li>
@@ -599,7 +600,48 @@
                 getData()
             </script>
         </div>
+        <div class="wordpressp row col row-cols-lg-4 row-cols-md-3" id="wordpress">
+            <script>
+                //const apie = "Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
 
+                    printdata3333wordpress(data)
+
+                }
+
+
+                function printdata3333wordpress(data) {
+                    const program13w = document.querySelector("#wordpress")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "wordpress") {
+                            continue;
+                        }
+                        program13w.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
 
 
     </div>

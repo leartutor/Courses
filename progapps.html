@@ -75,7 +75,9 @@
 
     <!--tabs-->
     <ul class="tabso">
+
         <li class="active" data-contn=".oneap">برامج التصميم </li>
+        <li data-contn=".sevenp">برامج مفتوحة المصدر </li>
         <li data-contn=".twoap">برامج المونتاج </li>
         <li data-contn=".threeap">برامج هندسية </li>
         <li data-contn=".fourap">برامج التعديل على الصوت </li>
@@ -318,6 +320,48 @@
                             continue;
                         }
                         program25.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sevenp row col row-cols-lg-4 row-cols-md-3" id="opensource">
+            <script>
+                //const apie = "/Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdata4399(data)
+
+                }
+
+
+                function printdata4399(data) {
+                    const program2555 = document.querySelector("#opensource")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برامج و تطبيقات") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "opensource") {
+                            continue;
+                        }
+                        program2555.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
