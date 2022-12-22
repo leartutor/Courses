@@ -8,14 +8,11 @@
     <meta name="description"
         content="هنا تجد الكورسات المجانية من مختلف المنصات والمواقع مجمعة في مكان واحد من أجل مساعدتك على التعلم" />
 
-    <title>تطوير الذات</title>
+    <title> مهارات يدوية </title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-
-
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HKPGLEHGM"></script>
     <script>
@@ -25,9 +22,6 @@
 
         gtag('config', 'G-3HKPGLEHGM');
     </script>
-
-
-
 </head>
 
 <body>
@@ -72,43 +66,38 @@
     <!--End of Navbar-->
 
     <div id="innnerpageh">
-        <h2>تطوير الذات </h2>
+        <h2>مهارات يدوية </h2>
     </div>
 
 
 
     <!--tabs-->
     <ul class="tabsaa">
-        <li class="active" data-contaa=".oneaa"> التعلم </li>
-        <li data-contaa=".twoaa"> العمل </li>
-        <li data-contaa=".threeaa"> الصحة </li>
-
-
-
-
+        <li class="active" data-contaa=".oneaa"> تعلم الزراعة </li>
+        <li data-contaa=".twoaa"> تعلم الكروشية </li>
 
     </ul>
+
     <div class="contentaa container">
-        <div class="oneaa row col row-cols-lg-4 row-cols-md-3" id="t3lom">
+        <div class="oneaa row col row-cols-lg-4 row-cols-md-3" id="agriculture">
             <script>
                 const apieo = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
                     const response = await fetch(apieo)
                     const data = await response.json()
 
-                    printdata5570(data)
-
+                    printdata5570mah(data)
                 }
-
-
-                function printdata5570(data) {
-                    const program5570 = document.querySelector("#t3lom")
+                function printdata5570mah(data) {
+                    const program5570mah = document.querySelector("#agriculture")
                     for (let i = 0; i < data.length; i++) {
-
-                        if (data[i].innercategory !== "t3lom") {
+                        if (data[i].category.trim() !== "مهارات يدوية") {
                             continue;
                         }
-                        program5570.innerHTML += `<div class="col">
+                        if (data[i].innercategory !== "agriculture") {
+                            continue;
+                        }
+                        program5570mah.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
@@ -129,7 +118,7 @@
                 getData()
             </script>
         </div>
-        <div class="twoaa row col row-cols-lg-4 row-cols-md-3" id="al3ml">
+        <div class="twoaa row col row-cols-lg-4 row-cols-md-3" id="croshea">
             <script>
                 const ap = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
@@ -137,17 +126,14 @@
                     const data = await response.json()
 
                     printdata5571(data)
-
                 }
-
-
                 function printdata5571(data) {
-                    const program5571 = document.querySelector("#al3ml")
+                    const program5571 = document.querySelector("#croshea")
                     for (let i = 0; i < data.length; i++) {
-                        if (data[i].category.trim() !== "تطوير الذات") {
+                        if (data[i].category.trim() !== "مهارات يدوية") {
                             continue;
                         }
-                        if (data[i].innercategory !== "al3ml") {
+                        if (data[i].innercategory !== "croshea") {
                             continue;
                         }
                         program5571.innerHTML += `<div class="col">
@@ -171,46 +157,7 @@
                 getData()
             </script>
         </div>
-        <div class="threeaa row col row-cols-lg-4 row-cols-md-3" id="se7a">
-            <script>
-                const apieoo = "https://leartutor.github.io/jsontest/Courses.json"
-                async function getData() {
-                    const response = await fetch(apieoo)
-                    const data = await response.json()
 
-                    printdata5572(data)
-
-                }
-
-
-                function printdata5572(data) {
-                    const program5572 = document.querySelector("#se7a")
-                    for (let i = 0; i < data.length; i++) {
-
-                        if (data[i].innercategory !== "se7a") {
-                            continue;
-                        }
-                        program5572.innerHTML += `<div class="col">
-    <div class="card h-100">
-        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
-            alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${data[i].title}</h5>
-            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
-            <span class="badge text-bg-danger">${data[i].platform}</span>
-            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
-            </a>
-        </div>
-    </div>
-</div>`
-
-                    }
-
-
-                }
-                getData()
-            </script>
-        </div>
 
 
 

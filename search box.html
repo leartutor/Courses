@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="هنا تجد الكورسات المجانية من مختلف المنصات والمواقع مجمعة في مكان واحد من أجل مساعدتك على التعلم" />
+
+    <title>البحث في الموقع</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HKPGLEHGM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3HKPGLEHGM');
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <nav class="shadow-lg navbar navbar-expand-lg bg-dark" dir="rtl">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="index.html">
+                <h2>Courses by LearTutor</h2>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-2 p-lg-3 text-warning" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                </ul>
+
+                <ul class="ulo">
+                    <button type="button" id="telegram" class="btn" position-relative>
+                        <a href="https://t.me/leartutorar" target="_blank" style="display: flex">
+                            <span>Telegram</span>
+                            <i class="bi bi-telegram" style="font-size: 20px"></i>
+                        </a>
+                    </button>
+                    <button type="button" id="telegram" class="btn" position-relative>
+                        <a href="https://twitter.com/LearTutor_AR" target="_blank" style="display: flex">
+                            <span>Twitter</span>
+                            <i class="bi bi-twitter" style="font-size: 20px"></i>
+                        </a>
+                    </button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+
+    <!--        br  -->
+    <!-- تضمين مكتبة jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- نموذج البحث -->
+    <div class="seachtext">
+        <h2 class="text-center">البحث</h2>
+        <p class="text-center"> تأكد من كتابة عبارة البحث بشكل صحيح بدون إخطاء إملائية </p>
+    </div>
+    <form id="searchForm">
+        <div class="form-group">
+            <input type="text" id="searchInput" class="form-control" placeholder="بحث" dir="rtl">
+        </div>
+        <button type="submit" class="btn btn-success"><i class="bi bi-search"></i> بحث <i
+                class="bi bi-search"></i></button>
+    </form>
+    <!-- محتوى لعرض نتائج البحث -->
+    <div id="resultsContainer" class="row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1"></div>
+    <!-- التعامل مع الطلبات الخاصة بنموذج البحث -->
+    <script>
+        var searchForm = document.getElementById('searchForm');
+        var searchInput = document.getElementById('searchInput');
+
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // منع الارسال الآلي للنموذج
+            var searchTerm = searchInput.value;
+
+            // استدعاء الدالة التي تحميل الملف JSON وتحليله
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://leartutor.github.io/jsontest/Courses.json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // تحليل البيانات المستلمة من الملف JSON
+                    var data = JSON.parse(xhr.responseText);
+                    // استدعاء الدالة التي تقوم بعرض البيانات
+                    printData(data, searchTerm);
+                } else {
+                    console.error('An error occurred: ' + xhr.status);
+                }
+            };
+            xhr.send();
+        });
+
+        // تعريف الدالة التي تقوم بالبحث في البيان
+        function search(data, searchTerm) {
+            // تجميع البيانات المطابقة للبحث
+            var results = [];
+            // التعبير العادي الخاص بالبحث
+            var regex = new RegExp(searchTerm, 'igu');
+            for (var i = 0; i < data.length; i++) {
+                if (regex.test(data[i].title) | regex.test(data[i].provider)) {
+                    results.push(data[i]);
+                }
+            }
+            return results;
+        }
+
+        var noResultsMessage = `<div class="text-center noresult"> 
+            <p>لا توجد نتائج بحث متطابقة</p> 
+            <p>تأكد من كتابة عبارة البحث بشكل صحيح</p>
+            <p>جرب البحث باللغة العربية و الإنجليزية عما تريد</p> 
+            <p>إذا لم تجد الكورس الذي تريد أرسل لنا رسالة عبر هذا الفورم بالكورس الذي تريد وسنحاول توفيره في
+              أقرب وقت إن شاء الله
+              <a href=" https://forms.gle/7ovR1a95YZY8722P9">اضغط هنا</a></p>
+            </div>`;
+
+        // تعريف الدالة التي تقوم بعرض البيانات
+        function printData(data, searchTerm) {
+            // البحث في البيانات
+            var results = search(data, searchTerm);
+            var resultsHTML = '';
+            if (results.length === 0) {
+
+                resultsHTML = noResultsMessage;
+                document.getElementById('resultsContainer').classList.remove('row', 'col', 'row-cols-lg-4', 'row-cols-md-3', 'row-cols-sm-1');
+            } else {
+                // عرض البيانات المطابقة لنتائج البحث
+
+                document.getElementById('resultsContainer').classList.add('row', 'col', 'row-cols-lg-4', 'row-cols-md-3', 'row-cols-sm-1');
+                for (var i = 0; i < results.length; i++) {
+
+                    resultsHTML += `<div class=" col">
+<div class="card h-100">
+    <img class="img-fluid" src="${results[i].thumbnailurl}" class="card-img-top"
+        alt="...">
+    <div class="card-body">
+        <h5 class="card-title">${results[i].title}</h5>
+        <p><strong>by</strong> <span class="badge text-bg-success"> ${results[i].provider}</span></p>
+        <span class="badge text-bg-danger">${results[i].platform}</span>
+        <a class="btn btn-outline-success" href="${results[i].curl}" target="_blank"> عرض الكورس
+        </a>
+    </div>
+</div>
+</div>`}
+            }
+
+
+            // إضافة النتائج إلى محتوى العرض
+            document.getElementById('resultsContainer').innerHTML = resultsHTML;
+        }
+
+
+    </script>
+    <!--        br  -->
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>
