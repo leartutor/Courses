@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar-en">
+
 
 <head>
+    <link rel="icon" href="fav.ico" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="هنا تجد الكورسات المجانية من مختلف المنصات والمواقع مجمعة في مكان واحد من أجل مساعدتك على التعلم" />
-
-    <title> مهارات يدوية </title>
+        content="كورسات و دورات مجانية لتعلم المهارات الديدوية المختلفة كالزراعة المنزلية و تعلم التلبيد و تعلم الكروشيه وغيرهم من الكورسات المجانية" />
+    <meta name="keywords" content=" تعلم, تعلم الكروشيه , تعلم الزراعة المنزلية ">
+    <title> تعلم المهارات اليدوية مجانا | كورسات و دورات مجانية </title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -73,13 +75,13 @@
 
     <!--tabs-->
     <ul class="tabsaa">
-        <li class="active" data-contaa=".oneaa"> تعلم الزراعة </li>
+        <li class="active" data-contaa=".oneaa"> تعلم الزراعة المنزلية</li>
         <li data-contaa=".twoaa"> تعلم الكروشية </li>
 
     </ul>
 
     <div class="contentaa container">
-        <div class="oneaa row col row-cols-lg-4 row-cols-md-3" id="agriculture">
+        <div class="oneaa row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1" id="agriculture">
             <script>
                 const apieo = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
@@ -118,7 +120,7 @@
                 getData()
             </script>
         </div>
-        <div class="twoaa row col row-cols-lg-4 row-cols-md-3" id="croshea">
+        <div class="twoaa row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1" id="croshea">
             <script>
                 const ap = "https://leartutor.github.io/jsontest/Courses.json"
                 async function getData() {
