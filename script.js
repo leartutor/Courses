@@ -184,5 +184,5 @@ fetch('https://leartutor.github.io/jsontest/Courses.json')
     .then(response => response.json())
     .then(courses => {
         var coursesNumber = document.getElementById("courses-number");
-        coursesNumber.textContent = courses.length;
+        coursesNumber.textContent = courses.length - 1;
     });
