@@ -83,7 +83,7 @@
         <li data-contbb=".twobb"> اللغة الإسبانية </li>
         <li data-contbb=".threebb"> اللغة الألمانية </li>
         <li data-contbb=".fourbb"> اللغة الفرنسية </li>
-        <li data-contbb=".fivebb"> اللغة الإيطالية </li>
+
 
 
 
@@ -251,46 +251,8 @@
                 getData()
             </script>
         </div>
-        <div class="fivebb row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1" id="italianlan">
-            <script>
-                //const apieoo = "Courses.json"
-                async function getData() {
-                    const response = await fetch(ap)
-                    const data = await response.json()
-
-                    printdata5514(data)
-
-                }
 
 
-                function printdata5514(data) {
-                    const program5514 = document.querySelector("#italianlan")
-                    for (let i = 0; i < data.length; i++) {
-
-                        if (data[i].innercategory !== "italianlan") {
-                            continue;
-                        }
-                        program5514.innerHTML += `<div class="col">
-<div class="card h-100">
-    <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
-        alt="...">
-    <div class="card-body">
-        <h5 class="card-title">${data[i].title}</h5>
-        <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
-        <span class="badge text-bg-danger">${data[i].platform}</span>
-        <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
-        </a>
-    </div>
-</div>
-</div>`
-
-                    }
-
-
-                }
-                getData()
-            </script>
-        </div>
 
 
 
