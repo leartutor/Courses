@@ -88,6 +88,8 @@
         <li data-conte=".elevenp">Angular</li>
         <li data-conte=".fourp">React</li>
         <li data-conte=".vuep">Vue</li>
+        <li data-conte=".sveltep">Svelte</li>
+        <li data-conte=".sqlp">SQL</li>
         <li data-conte=".sevenp">عام</li>
 
 
@@ -157,6 +159,90 @@
                             continue;
                         }
                         program13.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sveltep row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1" id="svelte">
+            <script>
+                //const apie = "Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatasvelte(data)
+
+                }
+
+
+                function printdatasvelte(data) {
+                    const program13svelte = document.querySelector("#svelte")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "svelte") {
+                            continue;
+                        }
+                        program13svelte.innerHTML += `<div class="col">
+    <div class="card h-100">
+        <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
+            alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${data[i].title}</h5>
+            <p><strong>by</strong> <span class="badge text-bg-success"> ${data[i].provider}</span></p>
+            <span class="badge text-bg-danger">${data[i].platform}</span>
+            <a class="btn btn-outline-success" href="${data[i].curl}" target="_blank"> عرض الكورس
+            </a>
+        </div>
+    </div>
+</div>`
+
+                    }
+
+
+                }
+                getData()
+            </script>
+        </div>
+        <div class="sqlp row col row-cols-lg-4 row-cols-md-3 row-cols-sm-1" id="sql">
+            <script>
+                //const apie = "Courses.json"
+                async function getData() {
+                    const response = await fetch(apie)
+                    const data = await response.json()
+
+                    printdatasql(data)
+
+                }
+
+
+                function printdatasql(data) {
+                    const program13sql = document.querySelector("#sql")
+                    for (let i = 0; i < data.length; i++) {
+                        if (data[i].category.trim() !== "برمجة") {
+                            continue;
+                        }
+                        if (data[i].innercategory !== "sql") {
+                            continue;
+                        }
+                        program13sql.innerHTML += `<div class="col">
     <div class="card h-100">
         <img class="img-fluid" src="${data[i].thumbnailurl}" class="card-img-top"
             alt="...">
